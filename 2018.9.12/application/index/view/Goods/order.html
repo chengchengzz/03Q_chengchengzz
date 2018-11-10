@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>订单</title>
+</head>
+<body>
+	<table border="1">
+         <tr>
+            <td>订单id</td>
+            <td>商品名称</td>
+            <td>商品描述</td>
+            <td>商品价格</td>
+            <td>购买数量</td>
+         </tr>
+         <?php foreach ($data as $key => $val) {?>
+           <tr>
+                <td><?=$val['goods_id']?></td>
+                <td><?=$val['goods_name']?></td>
+                <td><?=$val['goods_content']?></td>
+                <td><?=$val['goods_sprice']?></td>
+                <td><?=$val['cart_count']?></td>
+           </tr>
+           <?php  } ?>
+	</table>
+</body>
+</html>

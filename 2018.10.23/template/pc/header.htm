@@ -1,0 +1,69 @@
+<div class="header">
+  <div class="main top"><a href="{eyou:global name='web_cmsurl' /}/" title="{eyou:global name="web_name" /}" class="logo"><img src="{eyou:global name="web_logo" /}" class="pngFix" alt="{eyou:global name="web_name" /}" /></a>
+    <div class="tel"><span>{eyou:global name='web_attr_2' /}</span></div>
+  </div>
+  <div class="clear"></div>
+  <div class="menu1" id="menu">
+    <ul>
+      <li class="{eyou:eq name='$Think.const.CONTROLLER_NAME' value='Index'}cur{/eyou:eq}"><a href="{eyou:global name='web_cmsurl' /}/">网站首页</a></li>
+      {eyou:channel type="top" row="9" id="field" currentstyle="cur"} 
+      <li class="{$field.currentstyle}"><a href="{$field.typeurl}">{$field.typename}</a>
+       {eyou:notempty name="$field.children"}
+        <div class="mtan">
+          <div class="mm"> 
+          {eyou:channel name="$field.children" row="100" id="field2"}
+           <a href="{$field2.typeurl}">{$field2.typename}</a> |
+          {/eyou:channel} 
+           </div>
+        </div>
+       {/eyou:notempty}
+      </li>
+      {/eyou:channel}
+    </ul>
+  </div>
+</div>
+<div class="clear"></div>
+<div class="banner">
+  <div id="container">
+    <div id="example">
+      <div id="slides">
+        <div class="slides_container"> 
+        {eyou:adv pid='1'}
+          <div> <a href="{$field.links}"><img src="{$field.litpic}" width="1004" height="360"></a> </div>
+        {/eyou:adv}</div>
+        <a href="#" class="prev" title="prev"><img src="{eyou:global name='web_templets_pc' /}/skin/img/arrow-prev.png" width="30" height="70" alt="prev"></a> <a href="#" class="next" title="next"><img src="{eyou:global name='web_templets_pc' /}/skin/img/arrow-next.png" width="30" height="70" alt="next"></a> </div>
+    </div>
+  </div>
+  <div class="notice">
+    <div class="search">
+      <form method="get" action="{eyou:searchurl /}">
+        <input type="hidden" name="channel" value="" />
+        <input type="hidden" name="typeid" value="" />
+        <input type="text" class="text" name="keywords" id="keywords" value="请输入关键词" onfocus="this.value=''" onblur="if(!value){value=defaultValue}"  />
+        <input type="submit" title="搜索" class="button" value=""/>
+      </form>
+      <script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/jqselect.js"></script> 
+      <script type=text/javascript>
+                    jQuery(document).ready(function() {
+                        jQuery("#nochongf").selectbox();
+                    });
+                </script> 
+    </div>
+    <div class="noticecon">
+      <p><b>notice</b> &nbsp;最新公告</p>
+      <div class="demopage">
+        <div class="control"><a href="javascript:void(0);" id="goD"><img src="{eyou:global name='web_templets_pc' /}/skin/img/top1.jpg" width="30" height="30" /></a></div>
+        <div id="marquee2">
+          <ul>
+            {eyou:arclist  titlelen='40' typeid='2' flag='c'}
+            <li><a href="{$field.arcurl}" title="{$field.title}"><span>{$field.title}</span>
+              <label>{$field.add_time|MyDate='Y-m-d',###}</label>
+              </a></li>
+            {/eyou:arclist}
+          </ul>
+        </div>
+        <div class="control"><a href="javascript:void(0);" id="goU"><img src="{eyou:global name='web_templets_pc' /}/skin/img/top2.jpg" width="30" height="30" /></a></div>
+      </div>
+    </div>
+  </div>
+</div>

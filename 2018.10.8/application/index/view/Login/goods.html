@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<title>商品展示表</title>
+</head>
+<body>
+<center>
+    <table border="1">
+        <h1>展示类表</h1>
+        <a href="index.html">首页</a>
+        <tr>
+            <td>商品id</td>
+            <td>商品名称</td>
+            <td>商品价格</td>
+            <td>商品简介</td>
+            <td>商品图片</td>
+            <td>操作</td>
+        </tr>
+        <?php foreach ($data as $key=>$val) { ?>
+        <tr>
+            <td><?=$val['goods_id']?></td>
+            <td><?=$val['goods_name']?></td>
+            <td><?=$val['goods_sprice']?></td>
+            <td><?=$val['goods_content']?></td>
+            <td><img src="__ROOT__/uploads/<?=$val['goods_img']?>" alt="" width="100px" height="100px"></td>
+            <td><a href="del?goods_id={$val.goods_id}">删除</a>||<a href="upload"?goods_id="{$val.goods_id}">修改</a></td>
+        </tr>
+        <?php  } ?>
+    </table>
+</center>
+</body>
+</html>

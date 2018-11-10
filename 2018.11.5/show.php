@@ -30,6 +30,7 @@ $data=$thiss->show("title");
 			<td><?php echo $v['title'] ?></td>
 			<td><?php echo $v['fenlei'] ?></td>
 			<td><?php echo $v['content'] ?></td>
+			<td><a href="delete.php?code={$v[id]}">删除</a></td>
 		</tr>
 		<?php  }?>
 	</table>

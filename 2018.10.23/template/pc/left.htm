@@ -1,0 +1,50 @@
+<div class="left">
+      {eyou:channelartlist typeid='35'}
+      <div class="leftProClaList"> 
+        <div class="leftProTitle">{eyou:field name='typename' /} <span>{eyou:field name='englist_name' /}</span></div>
+        
+        <ul class="leftProClaListUl">
+          {eyou:channel type='first' id='field' currentstyle='on'}
+          <li><a href="{$field.typeurl}" class="{$field.currentstyle}">{$field.typename}</a></li>
+          {/eyou:channel}
+        </ul>
+        </ul>
+      </div>
+      {/eyou:channelartlist}
+      <!-- end procla_list-->
+      
+      <div class="leftContact">
+        <div class="leftTtitle">联系我们 <span>contact us</span></div>
+        <!-- end Ttitle-->
+        <div class="leftContactDl">
+          <dl>
+            <dt>手机：</dt>
+            <dd>{eyou:global name='web_attr_60' /}</dd>
+          </dl>
+          <dl>
+            <dt>电话：</dt>
+            <dd>{eyou:global name='web_attr_2' /}</dd>
+          </dl>
+          <dl>
+            <dt>邮箱：</dt>
+            <dd>{eyou:global name='web_attr_55' /}</dd>
+          </dl>
+          <dl>
+            <dt>地址：</dt>
+            <dd>{eyou:global name='web_attr_56' /}</dd>
+          </dl>
+          <div class="clear"></div>
+        </div>
+        <!-- end Ttitle--> 
+      </div>
+      <!-- end leftContact--> 
+      {eyou:channelartlist typeid='2'}
+      <ul class="leftNewsUl">
+        <div class="leftTtitle">{eyou:field name='typename' /} <span>{eyou:field name='englist_name' /}</span></div>
+        <!-- end Ttitle--> 
+        {eyou:arclist titlelen='40' row='4'}
+        <li><a href="{$field.arcurl}" title="">{$field.title}</a> </li>
+        {/eyou:arclist}
+      </ul>
+      {/eyou:channelartlist}
+    </div>

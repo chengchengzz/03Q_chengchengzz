@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>展示页</title>
+</head>
+<body>
+<center>
+	<table border="1">
+		<h1>展示页</h1>
+		<tr>
+			<td>商品id</td>
+			<td>商品名称</td>
+			<td>商品简介</td>
+			<td>商品价格</td>
+		</tr>
+		<?php foreach ($data as $key=>$val) { ?>
+		<tr>
+			<td><?=$val['id']?></td>
+			<td><?=$val['goods_name']?></td>
+			<td><?=$val['goods_content']?></td>
+			<td><?=$val['goods_sprice']?></td>
+		</tr>
+		<?php  } ?>
+	</table>
+</center>
+</body>
+</html>

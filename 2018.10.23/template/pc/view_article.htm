@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$eyou.field.seo_title}</title>
+<meta name="description" content="{eyou:global name='web_description' /}" />
+<meta name="keywords" content="{eyou:global name='web_keywords' /}" />
+<meta name="generator" content="eyoucms" data-variable="{eyou:global name='web_eyoucms' /}" />
+<link href="{eyou:global name='web_cmspath' /}/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_pc' /}/skin/css/child_page.css" />
+<link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_pc' /}/skin/css/child_form.css" />
+<link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_pc' /}/skin/css/child_vip.css" />
+<link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_pc' /}/skin/css/child_msg.css" />
+<link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_pc' /}/skin/css/child_cart.css" />
+<link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_pc' /}/skin/css/child_atm.css" />
+<link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_pc' /}/skin/css/style.css" />
+<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/jquery.js"></script>
+<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/banner.js"></script>
+<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/nav.js"></script>
+<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/form.js"></script>
+<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/passwordstrength-min.js"></script>
+<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/humane.js"></script>
+<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/child_atm.js"></script>
+<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/menu.js"></script>
+<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/jqselect.js"></script>
+<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/jquery.lazyload.js"></script>
+<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/marquee.js"></script>
+<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/slides.min.jquery.js"></script>
+<script type="text/javascript">
+$(function(){
+
+//一次纵向滚动一个
+$('#marquee2').kxbdSuperMarquee({
+    distance:30,
+    time:3,
+    btnGo:{up:'#goU',down:'#goD'},
+    direction:'up'
+});
+
+
+
+});
+
+</script>
+<script>
+    $(function(){
+        $('#slides').slides({
+            preload: true,
+            preloadImage: 'img/loading.gif',
+            play: 5000,
+            pause: 2500,
+            hoverPause: true,
+            animationStart: function(){
+                $('.caption').animate({
+                    bottom:-35
+                },100);
+            },
+            animationComplete: function(current){
+                $('.caption').animate({
+                    bottom:0
+                },200);
+                if (window.console && console.log) {
+                    // example return of current slide number
+                    console.log(current);
+                };
+            }
+        });
+    });
+</script>
+<!--[if IE 6]><script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/dd_belatedpng.js"></script><![endif]-->
+</head>
+<body>
+
+<!-- 头部 --> 
+{eyou:include file="/template/pc/header.htm" /} 
+<!-- 头部 end-->
+
+<div class="pronaa">
+  <div class="nowname"><font>{$eyou.field.typename}</font></div>
+  <div class="mowleft">您当前的位置：{eyou:position style="crumb" /} </div>
+</div>
+<div class="productfra">
+  <div class="padding25">
+    <h2 class="center">{$eyou.field.title}</h2>
+    <div class="title_s">
+      <div class="divleft">时间：{$eyou.field.add_time|MyDate='Y-m-d',###}</div>
+      <div class="divright">
+        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+      </div>
+    </div>
+    <div class="newsview"> {$eyou.field.content} </div>
+    <div class="viewpage">
+      <div class="main_r_nav">{eyou:prenext get="pre" empty="上一篇：暂无"} <a href="{$field.arcurl}" title="{$field.title}"> 上一篇 : {$field.title} </a> {/eyou:prenext}{eyou:prenext get="next" empty="下一篇：暂无"} <a href="{$field.arcurl}" title="{$field.title}"> 下一篇 : {$field.title} </a> {/eyou:prenext} </div>
+      <div class="returnlist"> <a href="{$eyou.field.typeurl}" title="返回列表">返回列表</a> </div>
+    </div>
+  </div>
+</div>
+<!-- 底部 --> 
+{eyou:include file="/template/pc/footer.htm" /} 
+<!-- 底部 end-->
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>商品表</title>
+</head>
+<body>
+  <center>
+    <form action="{:url('Goods/add')}" method="post" enctype="multipart/form-data">
+      <table border="1">
+        <h1>商品列表</h1>
+        <tr>
+          <td>商品名称:</td>
+          <td><input type="text" name="goods_name"></td>
+        </tr>
+        <tr>
+          <td>商品简介:</td>
+          <td><textarea name="goods_content" id="" cols="30" rows="10"></textarea></td>
+        </tr>
+        <tr>
+          <td>商品单价:</td>
+          <td><input type="text" name="goods_sprice"></td>
+        </tr>
+        <tr>
+          <td>商品时间:</td>
+          <td><input type="text" name="addtime"></td>
+        </tr>
+        <tr>
+          <td>商品图片:</td>
+          <td><input type="file" name="img"></td>
+        </tr>
+        <tr>
+          <td>商品库存:</td>
+          <td><input type="text" name="goods_sku"></td>
+        </tr>
+        <tr>
+          <td><input type="submit" value="提交"></td>
+          <td></td>
+        </tr>
+      </table>
+    </form>
+  </center>
+</body>
+</html>

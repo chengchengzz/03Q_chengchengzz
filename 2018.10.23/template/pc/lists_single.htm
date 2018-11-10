@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>{$eyou.field.seo_title}</title>
+	<meta name="description" content="{eyou:global name='web_description' /}" />
+	<meta name="keywords" content="{eyou:global name='web_keywords' /}" />
+	<meta name="generator" content="eyoucms" data-variable="{eyou:global name='web_eyoucms' /}" />
+	<link href="{eyou:global name='web_cmspath' /}/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+	<link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_pc' /}/skin/css/child_page.css" />
+	<link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_pc' /}/skin/css/child_form.css" />
+	<link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_pc' /}/skin/css/child_vip.css" />
+	<link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_pc' /}/skin/css/child_msg.css" />
+	<link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_pc' /}/skin/css/child_cart.css" />
+	<link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_pc' /}/skin/css/child_atm.css" />
+	<link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_pc' /}/skin/css/style.css" />
+	<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/jquery.js"></script>
+	<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/banner.js"></script>
+	<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/nav.js"></script>
+	<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/form.js"></script>
+	<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/passwordstrength-min.js"></script>
+	<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/humane.js"></script>
+	<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/child_atm.js"></script>
+	<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/menu.js"></script>
+	<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/jqselect.js"></script>
+	<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/jquery.lazyload.js"></script>
+	<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/marquee.js"></script>
+	<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/slides.min.jquery.js"></script>
+	<script type="text/javascript">
+$(function(){
+
+	//一次纵向滚动一个
+	$('#marquee2').kxbdSuperMarquee({
+		distance:30,
+		time:3,
+		btnGo:{up:'#goU',down:'#goD'},
+		direction:'up'
+	});
+	
+	
+	
+});
+
+</script>
+	<script>
+		$(function(){
+			$('#slides').slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				play: 5000,
+				pause: 2500,
+				hoverPause: true,
+				animationStart: function(){
+					$('.caption').animate({
+						bottom:-35
+					},100);
+				},
+				animationComplete: function(current){
+					$('.caption').animate({
+						bottom:0
+					},200);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log(current);
+					};
+				}
+			});
+		});
+	</script>
+	<!--[if IE 6]><script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/dd_belatedpng.js"></script><![endif]-->
+	</head>
+	<body>
+
+<!-- 头部 --> 
+{eyou:include file="/template/pc/header.htm" /} 
+<!-- 头部 end-->
+
+<div class="pronaa">
+      <div class="nowname"><font>{$eyou.field.typename}</font></div>
+      <div class="mowleft">您当前的位置：{eyou:position style="crumb" /} </div>
+</div>
+<div class="prolanmu1">
+      <div class="pro_lanfra" style=" text-align:left;"> 
+      {eyou:channel type='first' row='10' currentstyle='cur'} 
+      <span><a href="{$field.typeurl}" class="{$field.currentstyle}">{$field.typename}</a></span> 
+      {/eyou:channel} 
+      </div>
+</div>
+<div class="productfra">
+      <div class="padding25"> {$eyou.field.content} </div>
+</div>
+
+<!-- 底部 --> 
+{eyou:include file="/template/pc/footer.htm" /} 
+<!-- 底部 end-->
+
+</body>
+</html>

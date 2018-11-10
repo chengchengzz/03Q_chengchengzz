@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="telephone=no" name="format-detection" />
+<title>{eyou:global name='web_title' /}</title>
+<meta name="description" content="{eyou:global name='web_description' /}" />
+<meta name="keywords" content="{eyou:global name='web_keywords' /}" />
+<meta name="generator" content="eyoucms" data-variable="{eyou:global name='web_eyoucms' /}" />
+<link href="{eyou:global name='web_cmspath' /}/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_m' /}/skin/css/master.css" />
+<link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_m' /}/skin/css/subpage.css" />
+<link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_m' /}/skin/css/child_vip.css" />
+<script type="text/javascript" src="{eyou:global name='web_templets_m' /}/skin/js/jquery.js"></script>
+<style>
+.head {
+	background: #27272f
+}
+.foot {
+	background: #27272f
+}
+.nav {
+	background: #27272f
+}
+.nav_color {
+	background: #27272f
+}
+</style>
+<link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_m' /}/skin/css/swiper.css" />
+<script type="text/javascript" src="{eyou:global name='web_templets_m' /}/skin/js/nav.js"></script>
+<script type="text/javascript" src="{eyou:global name='web_templets_m' /}/skin/js/cart_icon.js"></script>
+<script type="text/javascript" src="{eyou:global name='web_templets_m' /}/skin/js/swiper.js"></script>
+<script type="text/javascript" src="{eyou:global name='web_templets_m' /}/skin/js/lihe.js"></script>
+</head>
+<body>
+{eyou:include file="/template/mobile/header.htm" /}
+<div class="allpage">
+  <div class="black-fixed iconfont">&#xe60f;</div>
+  <div class="header">
+    <div class="head">
+      <div class="hsrh-btn hfont">&#xe6a4;</div>
+      <a href="{eyou:global name='web_cmsurl' /}/" title="{eyou:global name='web_title' /}" class="logo"> <img src="{eyou:global name='web_attr_59' /}" alt="{eyou:global name='web_title' /}"/> </a>
+      <div class="nav-btn hfont">&#xe6a2;</div>
+    </div>
+    <div class="type">
+      <h1>搜索：</h1>
+      <div class="common-pro-search">
+        <form method="get" action="{eyou:searchurl /}">
+          <input type="hidden" name="channel" value="" />
+          <input type="hidden" name="typeid" value="" />
+          <input type="text" class="common-text" name="keywords" id="keywords" placeholder="请输入搜索关键词"/>
+          <input type="submit" class="common-submit iconfont" value="&#xe600;"/>
+        </form>
+      </div>
+      
+    </div>
+  </div>
+  <div class="content">
+    <div class="banner">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+         {eyou:adv pid='3'}
+          <div class="swiper-slide"><img src="{$field.litpic}"></div>
+         {/eyou:adv}
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <div class="hnav2 clear-fix"> 
+      {eyou:channel type='top' row='8' id='field'}
+       <a href="{$field.typeurl}" class="son">{$field.typename}</a>
+      {/eyou:channel}
+    </div>
+    {eyou:channelartlist typeid='35'}
+    <a class="itl" href="{eyou:field name='typeurl'/}">
+    <h2><span>{eyou:field name='typename'/}</span><span>查看更多</span></h2>
+    </a>
+    <div class="iwrap clear-fix">
+    {eyou:arclist row='4' titlelen='40'}
+      <dl class="item_b">
+        <dd class="pic"> <a href="{$field.arcurl}" title="{$field.title}"><img src="{$field.litpic}"></a> </dd>
+        <dt class="con">
+          <h3 class="tl"><a href="{$field.arcurl}" title="{$field.title}">{$field.title}</a></h3>
+        </dt>
+      </dl>
+     {/eyou:arclist} 
+    </div>
+    {/eyou:channelartlist}
+    {eyou:channelartlist typeid='36'}
+    <a class="itl" href="{eyou:field name='typeurl'/}">
+    <h2><span>{eyou:field name='typename'/}</span><span>查看更多</span></h2>
+    </a>
+    <div>
+    {eyou:arclist row='3' titlelen='40' infolen='30'}
+      <dl class="item_a clear-fix">
+        <dd class="pic"> <a href="{$field.arcurl}" title="{$field.title}"><img src="{$field.litpic}"></a> </dd>
+        <dt class="con">
+          <h3 class="tl"><a href="{$field.arcurl}" title="{$field.title}">{$field.title}</a></h3>
+          <div class="txt">{$field.seo_description}...</div>
+        </dt>
+      </dl>
+     {/eyou:arclist}   
+    </div>
+    {/eyou:channelartlist}
+    <div class="iabout2">
+      <p class="a">电话：{eyou:global name='web_attr_2' /}</p>
+      <a class="e" href="tel:{eyou:global name='web_attr_2' /}">点击立即拨打</a> </div>
+    {eyou:channelartlist typeid='1'}
+    <div class="iabout clear-fix">
+      <div class="tl">{eyou:field name='typename'/}</div>
+      <div class="con">
+        <div class="txt">{eyou:type addtable='single_content'}{$field.content|html_msubstr=###,0,85}...{/eyou:type}</div>
+        <div class="more"><a href="{eyou:field name='typeurl'/}" title="查看详细">【查看详细】</a></div>
+      </div>
+    </div>
+    {/eyou:channelartlist}
+    
+    {eyou:channelartlist typeid='38,0'} 
+    <a class="itl" href="{eyou:field name='typeurl'/}">
+    <h2><span>{eyou:field name='typename'/}</span><span>查看更多</span></h2>
+    </a>
+    <div class="iwrap clear-fix">
+    {eyou:arclist row='2' titlelen='40'}
+      <dl class="item_b">
+        <dd class="pic"> <a href="{$field.arcurl}" title="{$field.title}"><img src="{$field.litpic}"></a> </dd>
+        <dt class="con">
+          <h3 class="tl2"><a href="{$field.arcurl}" title="{$field.title}">{$field.title}</a></h3>
+        </dt>
+      </dl>
+      {/eyou:arclist}  
+    </div>
+    {/eyou:channelartlist}
+    {eyou:channelartlist typeid='2'} 
+    <a class="itl" href="{eyou:field name='typeurl'/}">
+    <h2><span>{eyou:field name='typename'/}</span><span>查看更多</span></h2>
+    </a>
+    <ul class="inew">
+    {eyou:arclist row='5' titlelen='40'}
+     <li> <a href="{$field.arcurl}" title="{$field.title}">{$field.title}</a> </li>
+    {/eyou:arclist}  
+    </ul>
+    {/eyou:channelartlist}
+    <div class="icontact">
+      <p class="b"><span><img src="{eyou:global name='web_templets_m' /}/skin/img/img4.png"></span><span>全国统一热线<br>
+        <strong>{eyou:global name='web_attr_2' /}</strong></span></p>
+      <a class="a" href="tel:{eyou:global name='web_attr_2' /}">立即拨打</a> </div>
+    <div class="beian"> 版权所有：{eyou:global name='web_copyright' /}  </div>
+  </div>
+    {eyou:include file="/template/mobile/footer.htm" /}
+</div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="telephone=no" name="format-detection" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>搜索页_{eyou:global name="web_name" /}</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="generator" content="eyoucms" data-variable="{eyou:global name='web_eyoucms' /}" />
+<link href="{eyou:global name='web_cmspath' /}/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_m' /}/skin/css/master.css" />
+<link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_m' /}/skin/css/subpage.css" />
+<link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_m' /}/skin/css/child_vip.css" />
+<script type="text/javascript" src="{eyou:global name='web_templets_m' /}/skin/js/jquery.js"></script>
+<style>
+.head {
+	background: #27272f
+}
+.foot {
+	background: #27272f
+}
+.nav {
+	background: #27272f
+}
+.nav_color {
+	background: #27272f
+}
+</style>
+<script type="text/javascript" src="{eyou:global name='web_templets_m' /}/skin/js/nav.js"></script>
+<script type="text/javascript" src="{eyou:global name='web_templets_m' /}/skin/js/cart_icon.js"></script>
+</head>
+
+<body>
+{eyou:include file="/template/mobile/header.htm" /}
+<div class="allpage">
+  <div class="black-fixed commonfont">&#xe607;</div>
+  <div class="header">
+    <div class="head"> <a href="{eyou:global name='web_cmsurl' /}/" title="首页" class="home-btn commonfont">&#xe608;</a>
+      <p class="top-title">搜索结果</p>
+      <div class="nav-btn commonfont">&#xe60b;</div>
+    </div>
+  </div>
+  <div class="content">
+    <div style="height:50px; line-height:50px; font-size:1.5em; padding-left:18px;">搜索 <strong class="fc_03c">{$eyou.field.keywords}</strong> 的结果</div>
+    <ul class="common_news">
+      {eyou:list pagesize ='10' titlelen="40" }
+      <li class="news1"> <a href="{$field.arcurl}" title="{$field.title}"><span>{$field.title}</span><span>{$field.add_time|MyDate='Y-m-d',###}</span></a> </li>
+      {/eyou:list}
+    </ul>
+    <div class='pglist'>
+      <ul>
+        {eyou:pagelist listitem='index,end,pre,next' listsize='2' /}
+      </ul>
+  </div>
+
+  </div>
+  {eyou:include file="/template/mobile/footer.htm" /}</div>
+</body>
+</html>

@@ -1,0 +1,1471 @@
+---------------------------------------------------------------
+[ 2018-10-19T11:57:44+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ info ] www.admin.com/ [运行时间：0.201419s][吞吐率：4.96req/s] [内存消耗：1,016.98kb] [文件加载：33]
+[ info ] [ LANG ] D:\phpStudy\WWW\2018.10.18\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ar;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.16 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\phpStudy\WWW\2018.10.18\app\home\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-19T11:57:49+08:00 ] 127.0.0.1 127.0.0.1 GET /admin
+[ info ] www.admin.com/admin [运行时间：0.105646s][吞吐率：9.47req/s] [内存消耗：1,093.90kb] [文件加载：34]
+[ info ] [ LANG ] D:\phpStudy\WWW\2018.10.18\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ar;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.16 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-19T11:57:49+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/publics/login.html
+[ info ] www.admin.com/admin/publics/login.html [运行时间：0.060923s][吞吐率：16.41req/s] [内存消耗：1,230.33kb] [文件加载：38]
+[ info ] [ LANG ] D:\phpStudy\WWW\2018.10.18\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'publics',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=pgm48rg18h3ohacbk6kars25j3',
+  'accept-language' => 'zh-CN,zh;q=0.9,ar;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.16 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Publics->login[ D:\phpStudy\WWW\2018.10.18\app\admin\controller\Publics.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW\2018.10.18\public/../app/admin\view\publics\login.html [ array (
+  0 => 'version',
+  1 => 'systime',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-19T11:57:50+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/publics/verify.html
+[ info ] www.admin.com/admin/publics/verify.html [运行时间：0.082848s][吞吐率：12.07req/s] [内存消耗：1,107.73kb] [文件加载：34]
+[ info ] [ LANG ] D:\phpStudy\WWW\2018.10.18\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'publics',
+    2 => 'verify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=pgm48rg18h3ohacbk6kars25j3',
+  'accept-language' => 'zh-CN,zh;q=0.9,ar;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.admin.com/admin/publics/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.16 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Publics->verify[ D:\phpStudy\WWW\2018.10.18\app\admin\controller\Publics.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-19T11:57:50+08:00 ] 127.0.0.1 127.0.0.1 GET /static/admin/images/loginbg_09.jpg
+[ info ] www.admin.com/static/admin/images/loginbg_09.jpg [运行时间：0.028720s][吞吐率：34.82req/s] [内存消耗：786.57kb] [文件加载：26]
+[ info ] [ LANG ] D:\phpStudy\WWW\2018.10.18\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=pgm48rg18h3ohacbk6kars25j3',
+  'accept-language' => 'zh-CN,zh;q=0.9,ar;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.admin.com/admin/publics/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.16 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-19T11:57:51+08:00 ] 127.0.0.1 127.0.0.1 GET /static/admin/images/loginbg_06.jpg
+[ info ] www.admin.com/static/admin/images/loginbg_06.jpg [运行时间：0.013537s][吞吐率：73.87req/s] [内存消耗：786.57kb] [文件加载：26]
+[ info ] [ LANG ] D:\phpStudy\WWW\2018.10.18\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=pgm48rg18h3ohacbk6kars25j3',
+  'accept-language' => 'zh-CN,zh;q=0.9,ar;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.admin.com/admin/publics/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.16 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-19T11:57:55+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/publics/login.html
+[ info ] www.admin.com/admin/publics/login.html [运行时间：0.025053s][吞吐率：39.92req/s] [内存消耗：1,116.09kb] [文件加载：36]
+[ info ] [ LANG ] D:\phpStudy\WWW\2018.10.18\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'publics',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=pgm48rg18h3ohacbk6kars25j3',
+  'accept-language' => 'zh-CN,zh;q=0.9,ar;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.16 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Publics->login[ D:\phpStudy\WWW\2018.10.18\app\admin\controller\Publics.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW\2018.10.18\public/../app/admin\view\publics\login.html [ array (
+  0 => 'version',
+  1 => 'systime',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-19T11:57:55+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/publics/verify.html
+[ info ] www.admin.com/admin/publics/verify.html [运行时间：0.030511s][吞吐率：32.78req/s] [内存消耗：1,107.88kb] [文件加载：34]
+[ info ] [ LANG ] D:\phpStudy\WWW\2018.10.18\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'publics',
+    2 => 'verify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=pgm48rg18h3ohacbk6kars25j3',
+  'accept-language' => 'zh-CN,zh;q=0.9,ar;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.admin.com/admin/publics/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.16 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Publics->verify[ D:\phpStudy\WWW\2018.10.18\app\admin\controller\Publics.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-19T11:57:55+08:00 ] 127.0.0.1 127.0.0.1 GET /static/admin/images/loginbg_06.jpg
+[ info ] www.admin.com/static/admin/images/loginbg_06.jpg [运行时间：0.034235s][吞吐率：29.21req/s] [内存消耗：786.57kb] [文件加载：26]
+[ info ] [ LANG ] D:\phpStudy\WWW\2018.10.18\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=pgm48rg18h3ohacbk6kars25j3',
+  'accept-language' => 'zh-CN,zh;q=0.9,ar;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.admin.com/admin/publics/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.16 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-19T11:58:19+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/publics/dologin.html
+[ info ] www.admin.com/admin/publics/dologin.html [运行时间：0.424419s][吞吐率：2.36req/s] [内存消耗：1,754.38kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\2018.10.18\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'publics',
+    2 => 'dologin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=pgm48rg18h3ohacbk6kars25j3',
+  'accept-language' => 'zh-CN,zh;q=0.9,ar;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.admin.com/admin/publics/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.16 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.admin.com',
+  'accept' => '*/*',
+  'content-length' => '44',
+  'connection' => 'close',
+  'host' => 'www.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admins',
+  'password' => 'admins',
+  'verify' => 'jvhu4',
+)
+[ info ] [ RUN ] app\admin\controller\Publics->dologin[ D:\phpStudy\WWW\2018.10.18\app\admin\controller\Publics.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007146s ] mysql:dbname=2018.8.30;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ven_users` [ RunTime:0.041087s ]
+[ sql ] [ SQL ] SELECT * FROM `ven_users` WHERE  `name` = 'admins' LIMIT 1 [ RunTime:0.000626s ]
+[ sql ] [ SQL ] SELECT `status` FROM `ven_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000249s ]
+[ sql ] [ SQL ] UPDATE `ven_users`  SET `login_ip`=2130706433,`time_login`=1539921499,`login_count`=30  WHERE  `id` = 1 [ RunTime:0.048846s ]
+---------------------------------------------------------------
+[ 2018-10-19T11:58:21+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/index.html
+[ info ] www.admin.com/admin/index/index.html [运行时间：0.123997s][吞吐率：8.06req/s] [内存消耗：2,040.27kb] [文件加载：50]
+[ info ] [ LANG ] D:\phpStudy\WWW\2018.10.18\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=pgm48rg18h3ohacbk6kars25j3',
+  'accept-language' => 'zh-CN,zh;q=0.9,ar;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.admin.com/admin/publics/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.16 Safari/537.36',
+  'dnt' => '1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\2018.10.18\app\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\2018.10.18\public/../app/admin\view\index\index.html [ array (
+  0 => 'version',
+  1 => 'systime',
+  2 => 'sidebar',
+  3 => 'nowmenuname',
+  4 => 'username',
+  5 => 'sysinfo',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000833s ] mysql:dbname=2018.8.30;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ven_users` [ RunTime:0.015812s ]
+[ sql ] [ SQL ] SELECT `status` FROM `ven_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000344s ]
+---------------------------------------------------------------
+[ 2018-10-19T11:58:34+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/rbac/index.html
+[ info ] www.admin.com/admin/rbac/index.html [运行时间：0.124463s][吞吐率：8.03req/s] [内存消耗：2,082.28kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\2018.10.18\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'rbac',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=pgm48rg18h3ohacbk6kars25j3',
+  'accept-language' => 'zh-CN,zh;q=0.9,ar;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.admin.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.16 Safari/537.36',
+  'dnt' => '1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Rbac->index[ D:\phpStudy\WWW\2018.10.18\app\admin\controller\Rbac.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\2018.10.18\public/../app/admin\view\rbac\index.html [ array (
+  0 => 'version',
+  1 => 'systime',
+  2 => 'sidebar',
+  3 => 'nowmenuname',
+  4 => 'username',
+  5 => 'rolelists',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000725s ] mysql:dbname=2018.8.30;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ven_users` [ RunTime:0.014606s ]
+[ sql ] [ SQL ] SELECT `status` FROM `ven_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ven_role` [ RunTime:0.044853s ]
+[ sql ] [ SQL ] SELECT * FROM `ven_role` ORDER BY id asc [ RunTime:0.000324s ]
+---------------------------------------------------------------
+[ 2018-10-19T11:58:36+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/rbac/add.html
+[ info ] www.admin.com/admin/rbac/add.html [运行时间：0.104864s][吞吐率：9.54req/s] [内存消耗：2,206.05kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpStudy\WWW\2018.10.18\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'rbac',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=pgm48rg18h3ohacbk6kars25j3',
+  'accept-language' => 'zh-CN,zh;q=0.9,ar;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.admin.com/admin/rbac/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.16 Safari/537.36',
+  'dnt' => '1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Rbac->add[ D:\phpStudy\WWW\2018.10.18\app\admin\controller\Rbac.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\2018.10.18\public/../app/admin\view\rbac\add.html [ array (
+  0 => 'version',
+  1 => 'systime',
+  2 => 'sidebar',
+  3 => 'nowmenuname',
+  4 => 'username',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001007s ] mysql:dbname=2018.8.30;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ven_users` [ RunTime:0.016089s ]
+[ sql ] [ SQL ] SELECT `status` FROM `ven_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000308s ]
+---------------------------------------------------------------
+[ 2018-10-19T11:58:37+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/rbac/index.html
+[ info ] www.admin.com/admin/rbac/index.html [运行时间：0.080264s][吞吐率：12.46req/s] [内存消耗：2,082.28kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\2018.10.18\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'rbac',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=pgm48rg18h3ohacbk6kars25j3',
+  'accept-language' => 'zh-CN,zh;q=0.9,ar;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.admin.com/admin/rbac/add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.16 Safari/537.36',
+  'dnt' => '1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Rbac->index[ D:\phpStudy\WWW\2018.10.18\app\admin\controller\Rbac.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\2018.10.18\public/../app/admin\view\rbac\index.html [ array (
+  0 => 'version',
+  1 => 'systime',
+  2 => 'sidebar',
+  3 => 'nowmenuname',
+  4 => 'username',
+  5 => 'rolelists',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001116s ] mysql:dbname=2018.8.30;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ven_users` [ RunTime:0.017136s ]
+[ sql ] [ SQL ] SELECT `status` FROM `ven_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ven_role` [ RunTime:0.015693s ]
+[ sql ] [ SQL ] SELECT * FROM `ven_role` ORDER BY id asc [ RunTime:0.000390s ]
+---------------------------------------------------------------
+[ 2018-10-19T11:58:45+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/rbac/authorize/id/2.html
+[ info ] www.admin.com/admin/rbac/authorize/id/2.html [运行时间：0.190500s][吞吐率：5.25req/s] [内存消耗：2,267.69kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\2018.10.18\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'rbac',
+    2 => 'authorize',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=pgm48rg18h3ohacbk6kars25j3',
+  'accept-language' => 'zh-CN,zh;q=0.9,ar;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.admin.com/admin/rbac/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.16 Safari/537.36',
+  'dnt' => '1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Rbac->authorize[ D:\phpStudy\WWW\2018.10.18\app\admin\controller\Rbac.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\2018.10.18\public/../app/admin\view\rbac\authorize.html [ array (
+  0 => 'version',
+  1 => 'systime',
+  2 => 'sidebar',
+  3 => 'nowmenuname',
+  4 => 'username',
+  5 => 'rbacmenu',
+  6 => 'role_id',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000736s ] mysql:dbname=2018.8.30;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ven_users` [ RunTime:0.018071s ]
+[ sql ] [ SQL ] SELECT `status` FROM `ven_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ven_authaccess` [ RunTime:0.035398s ]
+[ sql ] [ SQL ] SELECT `rule_name` FROM `ven_authaccess` WHERE  `role_id` = 2 [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ven_menu` [ RunTime:0.015605s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`topid`,`module`,`control`,`actions`,`name` FROM `ven_menu` WHERE  `pid` = 0 ORDER BY path asc [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`topid`,`path`,`module`,`control`,`actions`,`name` FROM `ven_menu` WHERE  `topid` = 1 ORDER BY path asc [ RunTime:0.000489s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`topid`,`path`,`module`,`control`,`actions`,`name` FROM `ven_menu` WHERE  `topid` = 25 ORDER BY path asc [ RunTime:0.000426s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`topid`,`path`,`module`,`control`,`actions`,`name` FROM `ven_menu` WHERE  `topid` = 30 ORDER BY path asc [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`topid`,`path`,`module`,`control`,`actions`,`name` FROM `ven_menu` WHERE  `topid` = 4 ORDER BY path asc [ RunTime:0.000427s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`topid`,`path`,`module`,`control`,`actions`,`name` FROM `ven_menu` WHERE  `topid` = 46 ORDER BY path asc [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`topid`,`path`,`module`,`control`,`actions`,`name` FROM `ven_menu` WHERE  `topid` = 63 ORDER BY path asc [ RunTime:0.000270s ]
+---------------------------------------------------------------
+[ 2018-10-19T11:58:49+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/rbac/index.html
+[ info ] www.admin.com/admin/rbac/index.html [运行时间：0.074912s][吞吐率：13.35req/s] [内存消耗：2,082.28kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\2018.10.18\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'rbac',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=pgm48rg18h3ohacbk6kars25j3',
+  'accept-language' => 'zh-CN,zh;q=0.9,ar;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.admin.com/admin/rbac/add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.16 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Rbac->index[ D:\phpStudy\WWW\2018.10.18\app\admin\controller\Rbac.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\2018.10.18\public/../app/admin\view\rbac\index.html [ array (
+  0 => 'version',
+  1 => 'systime',
+  2 => 'sidebar',
+  3 => 'nowmenuname',
+  4 => 'username',
+  5 => 'rolelists',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000710s ] mysql:dbname=2018.8.30;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ven_users` [ RunTime:0.015854s ]
+[ sql ] [ SQL ] SELECT `status` FROM `ven_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ven_role` [ RunTime:0.014728s ]
+[ sql ] [ SQL ] SELECT * FROM `ven_role` ORDER BY id asc [ RunTime:0.000364s ]
+---------------------------------------------------------------
+[ 2018-10-19T11:58:53+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/rbac/index.html
+[ info ] www.admin.com/admin/rbac/index.html [运行时间：0.073694s][吞吐率：13.57req/s] [内存消耗：2,082.28kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\2018.10.18\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'rbac',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=pgm48rg18h3ohacbk6kars25j3',
+  'accept-language' => 'zh-CN,zh;q=0.9,ar;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.admin.com/admin/rbac/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.16 Safari/537.36',
+  'dnt' => '1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Rbac->index[ D:\phpStudy\WWW\2018.10.18\app\admin\controller\Rbac.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\2018.10.18\public/../app/admin\view\rbac\index.html [ array (
+  0 => 'version',
+  1 => 'systime',
+  2 => 'sidebar',
+  3 => 'nowmenuname',
+  4 => 'username',
+  5 => 'rolelists',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000719s ] mysql:dbname=2018.8.30;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ven_users` [ RunTime:0.016052s ]
+[ sql ] [ SQL ] SELECT `status` FROM `ven_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ven_role` [ RunTime:0.014255s ]
+[ sql ] [ SQL ] SELECT * FROM `ven_role` ORDER BY id asc [ RunTime:0.000265s ]
+---------------------------------------------------------------
+[ 2018-10-19T13:43:21+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ info ] www.admin.com/ [运行时间：0.022344s][吞吐率：44.75req/s] [内存消耗：1,016.99kb] [文件加载：33]
+[ info ] [ LANG ] D:\phpStudy\WWW\2018.10.18\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ar;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.16 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\phpStudy\WWW\2018.10.18\app\home\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-19T13:43:34+08:00 ] 127.0.0.1 127.0.0.1 GET /admin
+[ info ] www.admin.com/admin [运行时间：0.030346s][吞吐率：32.95req/s] [内存消耗：1,093.90kb] [文件加载：34]
+[ info ] [ LANG ] D:\phpStudy\WWW\2018.10.18\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,ar;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.16 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-19T13:43:34+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/publics/login.html
+[ info ] www.admin.com/admin/publics/login.html [运行时间：0.025396s][吞吐率：39.38req/s] [内存消耗：1,115.21kb] [文件加载：36]
+[ info ] [ LANG ] D:\phpStudy\WWW\2018.10.18\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'publics',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=lkf7smgnfsis4q9gjdi1pus5j3',
+  'accept-language' => 'zh-CN,zh;q=0.9,ar;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.16 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Publics->login[ D:\phpStudy\WWW\2018.10.18\app\admin\controller\Publics.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW\2018.10.18\public/../app/admin\view\publics\login.html [ array (
+  0 => 'version',
+  1 => 'systime',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-19T13:43:34+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/publics/verify.html
+[ info ] www.admin.com/admin/publics/verify.html [运行时间：0.049550s][吞吐率：20.18req/s] [内存消耗：1,107.73kb] [文件加载：34]
+[ info ] [ LANG ] D:\phpStudy\WWW\2018.10.18\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'publics',
+    2 => 'verify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=lkf7smgnfsis4q9gjdi1pus5j3',
+  'accept-language' => 'zh-CN,zh;q=0.9,ar;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.admin.com/admin/publics/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.16 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Publics->verify[ D:\phpStudy\WWW\2018.10.18\app\admin\controller\Publics.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-19T13:43:34+08:00 ] 127.0.0.1 127.0.0.1 GET /static/admin/images/loginbg_06.jpg
+[ info ] www.admin.com/static/admin/images/loginbg_06.jpg [运行时间：0.017214s][吞吐率：58.09req/s] [内存消耗：786.57kb] [文件加载：26]
+[ info ] [ LANG ] D:\phpStudy\WWW\2018.10.18\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=lkf7smgnfsis4q9gjdi1pus5j3',
+  'accept-language' => 'zh-CN,zh;q=0.9,ar;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.admin.com/admin/publics/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.16 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-19T13:43:34+08:00 ] 127.0.0.1 127.0.0.1 GET /static/admin/images/loginbg_04.jpg
+[ info ] www.admin.com/static/admin/images/loginbg_04.jpg [运行时间：0.019941s][吞吐率：50.15req/s] [内存消耗：786.57kb] [文件加载：26]
+[ info ] [ LANG ] D:\phpStudy\WWW\2018.10.18\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=lkf7smgnfsis4q9gjdi1pus5j3',
+  'accept-language' => 'zh-CN,zh;q=0.9,ar;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.admin.com/admin/publics/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.16 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-19T13:43:37+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/publics/login.html
+[ info ] www.admin.com/admin/publics/login.html [运行时间：0.024452s][吞吐率：40.90req/s] [内存消耗：1,116.09kb] [文件加载：36]
+[ info ] [ LANG ] D:\phpStudy\WWW\2018.10.18\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'publics',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=lkf7smgnfsis4q9gjdi1pus5j3',
+  'accept-language' => 'zh-CN,zh;q=0.9,ar;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.16 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Publics->login[ D:\phpStudy\WWW\2018.10.18\app\admin\controller\Publics.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW\2018.10.18\public/../app/admin\view\publics\login.html [ array (
+  0 => 'version',
+  1 => 'systime',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-19T13:43:37+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/publics/verify.html
+[ info ] www.admin.com/admin/publics/verify.html [运行时间：0.069415s][吞吐率：14.41req/s] [内存消耗：1,107.88kb] [文件加载：34]
+[ info ] [ LANG ] D:\phpStudy\WWW\2018.10.18\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'publics',
+    2 => 'verify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=lkf7smgnfsis4q9gjdi1pus5j3',
+  'accept-language' => 'zh-CN,zh;q=0.9,ar;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.admin.com/admin/publics/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.16 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Publics->verify[ D:\phpStudy\WWW\2018.10.18\app\admin\controller\Publics.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-19T13:43:38+08:00 ] 127.0.0.1 127.0.0.1 GET /static/admin/images/loginbg_06.jpg
+[ info ] www.admin.com/static/admin/images/loginbg_06.jpg [运行时间：0.013372s][吞吐率：74.78req/s] [内存消耗：786.57kb] [文件加载：26]
+[ info ] [ LANG ] D:\phpStudy\WWW\2018.10.18\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=lkf7smgnfsis4q9gjdi1pus5j3',
+  'accept-language' => 'zh-CN,zh;q=0.9,ar;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.admin.com/admin/publics/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.16 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-19T13:43:54+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/publics/dologin.html
+[ info ] www.admin.com/admin/publics/dologin.html [运行时间：0.033909s][吞吐率：29.49req/s] [内存消耗：1,113.91kb] [文件加载：36]
+[ info ] [ LANG ] D:\phpStudy\WWW\2018.10.18\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'publics',
+    2 => 'dologin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=lkf7smgnfsis4q9gjdi1pus5j3',
+  'accept-language' => 'zh-CN,zh;q=0.9,ar;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.admin.com/admin/publics/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.16 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.admin.com',
+  'accept' => '*/*',
+  'content-length' => '44',
+  'connection' => 'close',
+  'host' => 'www.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admins',
+  'password' => 'admins',
+  'verify' => 'zhtpa',
+)
+[ info ] [ RUN ] app\admin\controller\Publics->dologin[ D:\phpStudy\WWW\2018.10.18\app\admin\controller\Publics.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-19T13:43:56+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/publics/verify/time/0.15605654200725372.html
+[ info ] www.admin.com/admin/publics/verify/time/0.15605654200725372.html [运行时间：0.060000s][吞吐率：16.67req/s] [内存消耗：1,109.01kb] [文件加载：34]
+[ info ] [ LANG ] D:\phpStudy\WWW\2018.10.18\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'publics',
+    2 => 'verify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=lkf7smgnfsis4q9gjdi1pus5j3',
+  'accept-language' => 'zh-CN,zh;q=0.9,ar;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.admin.com/admin/publics/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.16 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'time' => '0.15605654200725372',
+)
+[ info ] [ RUN ] app\admin\controller\Publics->verify[ D:\phpStudy\WWW\2018.10.18\app\admin\controller\Publics.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-19T13:44:02+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/publics/dologin.html
+[ info ] www.admin.com/admin/publics/dologin.html [运行时间：0.131216s][吞吐率：7.62req/s] [内存消耗：1,754.38kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\2018.10.18\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'publics',
+    2 => 'dologin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=lkf7smgnfsis4q9gjdi1pus5j3',
+  'accept-language' => 'zh-CN,zh;q=0.9,ar;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.admin.com/admin/publics/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.16 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.admin.com',
+  'accept' => '*/*',
+  'content-length' => '44',
+  'connection' => 'close',
+  'host' => 'www.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admins',
+  'password' => 'admins',
+  'verify' => 'atr6g',
+)
+[ info ] [ RUN ] app\admin\controller\Publics->dologin[ D:\phpStudy\WWW\2018.10.18\app\admin\controller\Publics.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007990s ] mysql:dbname=2018.8.30;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ven_users` [ RunTime:0.017239s ]
+[ sql ] [ SQL ] SELECT * FROM `ven_users` WHERE  `name` = 'admins' LIMIT 1 [ RunTime:0.000616s ]
+[ sql ] [ SQL ] SELECT `status` FROM `ven_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000249s ]
+[ sql ] [ SQL ] UPDATE `ven_users`  SET `login_ip`=2130706433,`time_login`=1539927842,`login_count`=31  WHERE  `id` = 1 [ RunTime:0.055308s ]
+---------------------------------------------------------------
+[ 2018-10-19T13:44:04+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/index.html
+[ info ] www.admin.com/admin/index/index.html [运行时间：0.055435s][吞吐率：18.04req/s] [内存消耗：2,040.27kb] [文件加载：50]
+[ info ] [ LANG ] D:\phpStudy\WWW\2018.10.18\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=lkf7smgnfsis4q9gjdi1pus5j3',
+  'accept-language' => 'zh-CN,zh;q=0.9,ar;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.admin.com/admin/publics/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.16 Safari/537.36',
+  'dnt' => '1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\2018.10.18\app\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\2018.10.18\public/../app/admin\view\index\index.html [ array (
+  0 => 'version',
+  1 => 'systime',
+  2 => 'sidebar',
+  3 => 'nowmenuname',
+  4 => 'username',
+  5 => 'sysinfo',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000866s ] mysql:dbname=2018.8.30;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ven_users` [ RunTime:0.017743s ]
+[ sql ] [ SQL ] SELECT `status` FROM `ven_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000289s ]
+---------------------------------------------------------------
+[ 2018-10-19T13:44:12+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/menu/index.html
+[ info ] www.admin.com/admin/menu/index.html [运行时间：0.079288s][吞吐率：12.61req/s] [内存消耗：2,156.72kb] [文件加载：50]
+[ info ] [ LANG ] D:\phpStudy\WWW\2018.10.18\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'menu',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=lkf7smgnfsis4q9gjdi1pus5j3',
+  'accept-language' => 'zh-CN,zh;q=0.9,ar;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.admin.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.16 Safari/537.36',
+  'dnt' => '1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Menu->index[ D:\phpStudy\WWW\2018.10.18\app\admin\controller\Menu.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\2018.10.18\public/../app/admin\view\menu\index.html [ array (
+  0 => 'version',
+  1 => 'systime',
+  2 => 'sidebar',
+  3 => 'nowmenuname',
+  4 => 'username',
+  5 => 'menulists',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000720s ] mysql:dbname=2018.8.30;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ven_users` [ RunTime:0.017098s ]
+[ sql ] [ SQL ] SELECT `status` FROM `ven_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ven_menu` [ RunTime:0.015371s ]
+[ sql ] [ SQL ] SELECT * FROM `ven_menu` ORDER BY `path`  asc [ RunTime:0.000890s ]
+---------------------------------------------------------------
+[ 2018-10-19T13:44:18+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/menu/index.html
+[ info ] www.admin.com/admin/menu/index.html [运行时间：0.082544s][吞吐率：12.11req/s] [内存消耗：2,156.72kb] [文件加载：50]
+[ info ] [ LANG ] D:\phpStudy\WWW\2018.10.18\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'menu',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=lkf7smgnfsis4q9gjdi1pus5j3',
+  'accept-language' => 'zh-CN,zh;q=0.9,ar;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.admin.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.16 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Menu->index[ D:\phpStudy\WWW\2018.10.18\app\admin\controller\Menu.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\2018.10.18\public/../app/admin\view\menu\index.html [ array (
+  0 => 'version',
+  1 => 'systime',
+  2 => 'sidebar',
+  3 => 'nowmenuname',
+  4 => 'username',
+  5 => 'menulists',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000795s ] mysql:dbname=2018.8.30;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ven_users` [ RunTime:0.018016s ]
+[ sql ] [ SQL ] SELECT `status` FROM `ven_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ven_menu` [ RunTime:0.016784s ]
+[ sql ] [ SQL ] SELECT * FROM `ven_menu` ORDER BY `path`  asc [ RunTime:0.000869s ]
+---------------------------------------------------------------
+[ 2018-10-19T13:44:32+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/menu/add.html
+[ info ] www.admin.com/admin/menu/add.html [运行时间：0.098533s][吞吐率：10.15req/s] [内存消耗：2,145.90kb] [文件加载：50]
+[ info ] [ LANG ] D:\phpStudy\WWW\2018.10.18\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'menu',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=lkf7smgnfsis4q9gjdi1pus5j3',
+  'accept-language' => 'zh-CN,zh;q=0.9,ar;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.admin.com/admin/menu/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.16 Safari/537.36',
+  'dnt' => '1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Menu->add[ D:\phpStudy\WWW\2018.10.18\app\admin\controller\Menu.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\2018.10.18\public/../app/admin\view\menu\add.html [ array (
+  0 => 'version',
+  1 => 'systime',
+  2 => 'sidebar',
+  3 => 'nowmenuname',
+  4 => 'username',
+  5 => 'menulists',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011061s ] mysql:dbname=2018.8.30;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ven_users` [ RunTime:0.014931s ]
+[ sql ] [ SQL ] SELECT `status` FROM `ven_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ven_menu` [ RunTime:0.016017s ]
+[ sql ] [ SQL ] SELECT * FROM `ven_menu` ORDER BY `path`  asc [ RunTime:0.000914s ]
+---------------------------------------------------------------
+[ 2018-10-19T13:44:55+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/menu/index.html
+[ info ] www.admin.com/admin/menu/index.html [运行时间：0.078619s][吞吐率：12.72req/s] [内存消耗：2,156.72kb] [文件加载：50]
+[ info ] [ LANG ] D:\phpStudy\WWW\2018.10.18\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'menu',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=lkf7smgnfsis4q9gjdi1pus5j3',
+  'accept-language' => 'zh-CN,zh;q=0.9,ar;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.admin.com/admin/menu/add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.16 Safari/537.36',
+  'dnt' => '1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Menu->index[ D:\phpStudy\WWW\2018.10.18\app\admin\controller\Menu.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\2018.10.18\public/../app/admin\view\menu\index.html [ array (
+  0 => 'version',
+  1 => 'systime',
+  2 => 'sidebar',
+  3 => 'nowmenuname',
+  4 => 'username',
+  5 => 'menulists',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010579s ] mysql:dbname=2018.8.30;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ven_users` [ RunTime:0.015178s ]
+[ sql ] [ SQL ] SELECT `status` FROM `ven_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ven_menu` [ RunTime:0.015170s ]
+[ sql ] [ SQL ] SELECT * FROM `ven_menu` ORDER BY `path`  asc [ RunTime:0.000804s ]
+---------------------------------------------------------------
+[ 2018-10-19T13:44:58+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/myinfo/repasswd.html
+[ info ] www.admin.com/admin/myinfo/repasswd.html [运行时间：0.124271s][吞吐率：8.05req/s] [内存消耗：2,055.06kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\2018.10.18\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'myinfo',
+    2 => 'repasswd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=lkf7smgnfsis4q9gjdi1pus5j3',
+  'accept-language' => 'zh-CN,zh;q=0.9,ar;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.admin.com/admin/menu/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.16 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'dnt' => '1',
+  'accept' => 'text/html, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Myinfo->repasswd[ D:\phpStudy\WWW\2018.10.18\app\admin\controller\Myinfo.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\2018.10.18\public/../app/admin\view\myinfo\repasswd.html [ array (
+  0 => 'version',
+  1 => 'systime',
+  2 => 'sidebar',
+  3 => 'nowmenuname',
+  4 => 'username',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011826s ] mysql:dbname=2018.8.30;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ven_users` [ RunTime:0.021254s ]
+[ sql ] [ SQL ] SELECT `status` FROM `ven_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000319s ]
+---------------------------------------------------------------
+[ 2018-10-19T13:45:05+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/menu/add.html
+[ info ] www.admin.com/admin/menu/add.html [运行时间：0.084155s][吞吐率：11.88req/s] [内存消耗：2,145.90kb] [文件加载：50]
+[ info ] [ LANG ] D:\phpStudy\WWW\2018.10.18\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'menu',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=lkf7smgnfsis4q9gjdi1pus5j3',
+  'accept-language' => 'zh-CN,zh;q=0.9,ar;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.admin.com/admin/menu/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.16 Safari/537.36',
+  'dnt' => '1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Menu->add[ D:\phpStudy\WWW\2018.10.18\app\admin\controller\Menu.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\2018.10.18\public/../app/admin\view\menu\add.html [ array (
+  0 => 'version',
+  1 => 'systime',
+  2 => 'sidebar',
+  3 => 'nowmenuname',
+  4 => 'username',
+  5 => 'menulists',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011213s ] mysql:dbname=2018.8.30;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ven_users` [ RunTime:0.016224s ]
+[ sql ] [ SQL ] SELECT `status` FROM `ven_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ven_menu` [ RunTime:0.014778s ]
+[ sql ] [ SQL ] SELECT * FROM `ven_menu` ORDER BY `path`  asc [ RunTime:0.000776s ]
+---------------------------------------------------------------
+[ 2018-10-19T14:25:44+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ info ] www.admin.com/ [运行时间：0.023426s][吞吐率：42.69req/s] [内存消耗：1,017.66kb] [文件加载：33]
+[ info ] [ LANG ] D:\phpStudy\WWW\2018.10.18\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=lkf7smgnfsis4q9gjdi1pus5j3',
+  'accept-language' => 'zh-CN,zh;q=0.9,ar;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.16 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\phpStudy\WWW\2018.10.18\app\home\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-19T15:03:53+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ info ] www.admin.com/ [运行时间：0.044151s][吞吐率：22.65req/s] [内存消耗：1,017.72kb] [文件加载：33]
+[ info ] [ LANG ] D:\phpStudy\WWW\2018.10.18\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=lkf7smgnfsis4q9gjdi1pus5j3',
+  'accept-language' => 'zh-CN,zh;q=0.9,ar;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.16 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'purpose' => 'prefetch',
+  'connection' => 'close',
+  'host' => 'www.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\phpStudy\WWW\2018.10.18\app\home\controller\Index.php ]
+[ info ] [ LOG ] INIT File

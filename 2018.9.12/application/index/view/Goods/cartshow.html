@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购物车列表</title>
+	<!-- <script type="text/javascript" src="__ROOT__/static/js/jquery-1.7.2.min.js"></script>  -->
+</head>
+<style type="text/css">
+	.register{width:900px;min-height:300px;border:1px solid #ccc;background:#efefef;padding:20px;margin-top:3rem;margin-left:5rem;font-size:16px;font-weight:bold;}
+	.register-title{margin-left:25rem;}
+	.sub{margin-left:10rem;}
+	.login{float:right; margin-right:10px;}
+	table tr td{padding-left:15px;}
+	.cart{float:right;}
+	.text_box{width:50px;height:17px;}
+</style> 
+<body>
+<div class="register">
+<form action="add" method="post" enctype="multipart/form-data" method="post">
+<a href="show">商品首页</a>
+<a href="empty_cart" class="cart">清空购物车</a>
+	<table class="add">
+		<p class="register-title">购物车列表</p>
+		<tr>
+			<td>复选框</td>
+			<td>购物车ID</td>
+			<td>商品名称</td>
+			<td>商品描述</td>
+			<td>商品价格</td>
+			<td>商品图片</td>
+			<td>购买数量</td>
+			<td>商品总价</td>
+			<td>操作</td>
+		</tr>
+		<?php foreach ($cart_data as $key => $val) {?>
+			<tr>
+				<td><input type="checkbox" name="check" class="total" cart_id="<?=$val['cart_id']?>"></td>
+				<td><?=$val['cart_id']?></td>
+				<td><?=$val['goods_name']?></td>
+				<td><?=$val['goods_content']?></td>
+				<td><?=$val['goods_sprice']?></td>
+				<td><img src="__ROOT__/uploads/<?=$val['img']?>" alt="" width="90px" height="60px"></td>
+				<td>
+			<input type="number" name="count" min="1" value="<?=$val['cart_count']?>" class="text_box" goods_id="<?=$val['goods_id']?>" price="<?=$val['goods_sprice']?>">
+				</td>
+				<td><?=$val['cart_money']?></td>
+				<td>
+					<a href="cart_del/?id=<?=$val['cart_id']?>">删除</a>
+					<a href="order/?id=<?=$val['cart_id']?>&goods_id=<?=$val['goods_id']?>" class="sku">加入订单</a>
+				</td>		
+			</tr>
+		<?php }?>
+	</table>
+	<button id="checkAll">全选</button>
+    <button id="checkNone">全不选</button>
+    <button id="checkNo">反选</button>
+	<p>总价：<label></label></p> 
+</form>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="__ROOT__/jq.js"></script>
+<script>
+    $(".sku").on('click',function(e){
+          e.preventDefault()
+          var sku=$(this).parent().prev().prev().children().val()
+           var url=$(this).attr('href')
+            $.ajax({
+			url: url,
+			data: {sku:sku},
+			success: function(data){
+				if(data == 1){
+					alert("商品添加成功!");
+				}else{
+					$("body").html(data);
+				};
+			}
+		 });
+    });
+	$(".text_box").change(function(){
+		// 	商品数量
+		var count = $(this).val();
+		// 	商品id
+		var goods_id = $(this).attr('goods_id');
+		// 	商品价格
+		var price = $(this).attr('price');
+		var money = count*price;
+		 $.ajax({
+			type: "POST",
+			url: "count_add",
+			data: {count:count,goods_id:goods_id,money:money},
+			dataType:"json",
+			success: function(data){
+				if (data ==2) {
+					alert("商品库存不足！");
+				}else{
+					$("body").html(data); 
+				};
+			}
+		 });
+	})
+	<!--选择全部-->
+    $("#checkAll").click(function(){
+        alert(123);
+    });
+    <!--全不选-->
+    $("#nothing").click(function(){
+        $("#fruit :checkbox").prop("checked", false);
+    });
+    <!--反选-->
+    $("#reverseAll").click(function(){
+        $("#fruit :checkbox").each(function(i){
+            $(this).prop("checked", !$(this).prop("checked"));
+        });
+   	});
+</script>
+
+

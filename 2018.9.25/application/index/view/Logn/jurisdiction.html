@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>新增班级</title>
+<style>
+    ul li {
+      display: inline-block;
+      margin-left: -39px;
+
+    }
+    p{
+      position: absolute;
+      top:130px;
+      left: 1200px;
+    }
+
+    #l_button{
+      position: absolute;
+      top:130px;
+      left: 300px;
+    }
+    .right{
+      margin-left: -8px;
+    }
+</style>
+<link rel="stylesheet" type="text/css" href="__CSS__/erweima-style.css" />
+</head>
+<body>
+<div class="chuda_co" id="container">
+  <div class="co-box">
+	<div class="title"><h4>权限管理>>新增权限</h4></div>
+<div class="fill-info">
+    <div class="right">
+    <div class="info-box">
+    <label>权限类型：</label>
+              <input type="radio" name="name"  value="" checked onclick="dis_child()">&nbsp;&nbsp;子权限&nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="radio" name="name"  value="" onclick="dis_parent()">&nbsp;&nbsp;父权限
+           <div class="right"> 
+      <!--detail start-->
+              <!--按钮-->
+              <div class="info-box">
+                <ul class="ul-datetime">
+                    <li>
+                        <label>控制器：</label>
+                        <select name="" id="">
+                            <option value="1">Access</option>
+                            <option value="2">User</option>
+                            <option value="3">Common</option>
+
+                        </select>
+                        <span>权限名称</span>
+                        <input type="text" class="w100">
+                        
+                    </li>
+                    <li>
+                       <a class="btn01"  id="l_button">查询</a>
+                    </li>
+                    <p>
+                      <a class="btn03" href="">新增用户</a><a class="btn02" href="">批量删除</a>
+                    </p>
+                   
+                </ul>
+            </div>
+             <!--按钮-->
+      <div class="co-detail clearfix" id="child" > 
+        <table class="tablelist" border="0" cellpadding="0" cellspacing="0">
+            <thead>
+              <tr>
+                <th>权限编号</th>
+                <th>权限名称</th>
+                <th>请选择</th>
+                <th>描述</th>
+                <th>操作</th>
+              </tr>
+            <?php  foreach($data as $key=>$val) { ?>
+            </thead>
+            <tbody>
+              <tr>
+                <td><?=$val['id']?></td>
+                <td><?=$val['username']?></td>
+                <td><?=$val['father']?></td>
+                <td><?=$val['content']?></td>
+                <td class="operation">
+                    <a class="edit">修改</a>|<a class="edit">删除</a>
+                </td>
+              </tr>
+            <?php  } ?>
+            </tbody>
+          </table>
+          <!--分页 start-->
+          <div class="pages">
+            <div class="sum">共<i>18</i>条记录</div>
+            <div class="pages-btn">
+              <a class="pre">上一页</a>
+              <div class="num-btn"><a class="pages-current">1</a><a>2</a><a>3</a><a>4</a><a>5</a><a>6</a><a>7</a></div>
+              <a class="after">一页</a>
+            </div>
+          </div>
+          <!--分页 end-->
+      </div>
+      <div class="co-detail clearfix" id="parent" style="display:none"> 
+        <table class="tablelist" border="0" cellpadding="0" cellspacing="0">
+          </table>
+          <!--分页 start-->
+          <div class="pages">
+            <div class="sum">共<i>18</i>条记录</div>
+            <div class="pages-btn">
+              <a class="pre">上一页</a>
+              <div class="num-btn"><a class="pages-current">1</a><a>2</a><a>3</a><a>4</a><a>5</a><a>6</a><a>7</a></div>
+              <a class="after">一页</a>
+            </div>
+          </div>
+          <!--分页 end-->
+      </div>
+      <!--detail end-->
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+    </div>
+</body>
+</html>
+<script>
+    function dis_child(){
+        document.getElementById('child').style.display='block';
+        document.getElementById('parent').style.display='none';
+    }
+    function dis_parent(){
+        document.getElementById('child').style.display='none';
+        document.getElementById('parent').style.display='block';
+    }
+</script>

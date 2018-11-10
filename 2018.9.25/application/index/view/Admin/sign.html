@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>签到</title>
+</head>
+<body>
+<center>
+	<button id="sign" value="{$uid}">签到</button>
+</center>
+</body>
+</html>
+　<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+<script>
+	$('#sign').on('click',function(){
+		var id=$(this).val();
+		$.ajax({
+		 	url:"http://127.0.0.1/2018.9.25/public/index.php/index/Admin/sign_do.html",
+		    data:{uid:id},
+			success:function(res){
+			 }
+		 })
+	})
+</script>

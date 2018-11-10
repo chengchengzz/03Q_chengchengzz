@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{eyou:global name='web_title' /}</title>
+<meta name="description" content="{eyou:global name='web_description' /}" />
+<meta name="keywords" content="{eyou:global name='web_keywords' /}" />
+<meta name="generator" content="eyoucms" data-variable="{eyou:global name='web_eyoucms' /}" />
+<link href="{eyou:global name='web_cmspath' /}/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_pc' /}/skin/css/child_page.css" />
+<link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_pc' /}/skin/css/child_form.css" />
+<link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_pc' /}/skin/css/child_vip.css" />
+<link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_pc' /}/skin/css/child_msg.css" />
+<link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_pc' /}/skin/css/child_cart.css" />
+<link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_pc' /}/skin/css/child_atm.css" />
+<link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_pc' /}/skin/css/style.css" />
+<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/jquery.js"></script>
+<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/banner.js"></script>
+<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/nav.js"></script>
+<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/form.js"></script>
+<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/passwordstrength-min.js"></script>
+<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/humane.js"></script>
+<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/child_atm.js"></script>
+<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/menu.js"></script>
+<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/jqselect.js"></script>
+<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/jquery.lazyload.js"></script>
+<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/marquee.js"></script>
+<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/slides.min.jquery.js"></script>
+<script type="text/javascript">
+$(function(){
+
+	//一次纵向滚动一个
+	$('#marquee2').kxbdSuperMarquee({
+		distance:30,
+		time:3,
+		btnGo:{up:'#goU',down:'#goD'},
+		direction:'up'
+	});
+	
+	
+	
+});
+
+</script>
+	<script>
+		$(function(){
+			$('#slides').slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				play: 5000,
+				pause: 2500,
+				hoverPause: true,
+				animationStart: function(){
+					$('.caption').animate({
+						bottom:-35
+					},100);
+				},
+				animationComplete: function(current){
+					$('.caption').animate({
+						bottom:0
+					},200);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log(current);
+					};
+				}
+			});
+		});
+	</script>
+	<!--[if IE 6]><script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/dd_belatedpng.js"></script><![endif]-->
+	</head>
+	<body>
+    
+<!-- 头部 -->  
+{eyou:include file="/template/pc/header.htm" /}
+<!-- 头部 end-->
+
+{eyou:channelartlist typeid='63'}
+<div class="bus">
+      <div class="clear"></div>
+      <div class="kec">
+    <p class="prona1"> {eyou:field name='typename' /}</p>
+  </div>
+      <p class="proname">{eyou:field name='englist_name' /}</p>
+      <div class="busfra">
+    <ul class="busul">
+          {eyou:channel type='son' row='5' id="field"}
+          <li><a class="img" href="{$field.typeurl}" title="{$field.typename}"><img alt="{$field.typename}" src="{$field.litpic}" /></a><a class="wor" href="{$field.typeurl}" title="{$field.typename}">
+            <label>{$field.typename}</label>
+            <br />
+            <span>{$field.englist_name}</span></a></li>
+          {/eyou:channel}
+        </ul>
+  </div>
+    </div>
+{/eyou:channelartlist}    
+{eyou:channelartlist typeid='35'}
+<div class="case">
+      <div class="stop"> <span>{eyou:field name='typename' /}</span> <em>{eyou:field name='englist_name' /}</em><a href="{eyou:field name='typeurl' /}" title="更多">更多>></a> </div>
+      <div class="prolanmu1">
+    <div class="pro_lanfra"> {eyou:channel type='son' row='7' id="field"} <span> <a href="{$field.typeurl}" title="{$field.typename}">{$field.typename}</a></span> {/eyou:channel} <span><a href="{eyou:field name='typeurl' /}" title="查看更多" >查看更多</a></span> </div>
+  </div>
+      <div class="profra">
+    <div class="view-port"> {eyou:arclist titlelen='40' row='8'}
+          <div class="limg" >
+        <div class="block" data-move-y="300px" data-move-x="-200px" ><a class="img" href="{$field.arcurl}" title="{$field.title}"><span></span><b></b>
+          <label>{$field.title}</label>
+          <img src="{$field.litpic}" alt="{$field.title}" width="235" height="176" /></a></div>
+      </div>
+          {/eyou:arclist} </div>
+  </div>
+    </div>
+{/eyou:channelartlist}
+<div class="news"> {eyou:channelartlist typeid='2'}
+      <div class="newsleft">
+    <div class="newsltop"><span>{eyou:field name='typename' /}</span> <em>{eyou:field name='englist_name' /}</em> <a href="{eyou:field name='typeurl' /}" title="更多">更多>></a></div>
+    <ul class="newsmain">
+          <ul class="newsmain">
+        {eyou:arclist titlelen='40' row='4' infolen='50'}
+        <li><a href="{$field.arcurl}" title="{$field.title}">
+          <div class="time"><span>{$field.add_time|MyDate='Y',###}</span><font>{$field.add_time|MyDate='m.d',###}</font></div>
+          <div class="newsli_r">
+            <p class="newsli_rt"><span class="fl">{$field.title}</span></p>
+            <p class="newscont">{$field.seo_description}...</p>
+          </div>
+          </a> </li>
+        {/eyou:arclist}
+      </ul>
+        </ul>
+  </div>
+      {/eyou:channelartlist}
+      <div class="conright"> 
+    <script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/tab.js"></script> 
+    <script>
+$(function(){
+	$(".hdp_container").OM_HDP({delay:300,time:5000,title:1,type:2});
+})</script>
+    <div class="hdp_container"> {eyou:arclist typeid='38' titlelen='40' row='4'} <a href="{$field.arcurl}" title="{$field.title}"><img alt="{$field.title}" src="{$field.litpic}"></a> {/eyou:arclist} </div>
+    {eyou:channelartlist typeid='15'}
+    <a class="conmore" href="{eyou:field name='typeurl' /}" title="联系我们"></a>
+    <div class="news_frr">
+          <div class="news_mapcon">
+        <label>地址：</label>
+        <span>{eyou:global name='web_attr_56' /}</span> </div>
+          <div class="news_mapcon">
+        <label>电话：</label>
+        <span>{eyou:global name='web_attr_2' /}</span> </div>
+          <div class="news_mapcon">
+        <label>传真：</label>
+        <span>{eyou:global name='web_attr_57' /}</span> </div>
+          <div class="news_mapcon">
+        <label>邮箱：</label>
+        <span>{eyou:global name='web_attr_55' /}</span> </div>
+        </div>
+    {/eyou:channelartlist}    
+  </div>
+    </div>
+{eyou:channelartlist typeid='36'}
+<div class="case1">
+      <div class="stop"><span>{eyou:field name='typename' /}</span> <em>{eyou:field name='englist_name' /}</em> <a href="{eyou:field name='typeurl' /}" title="更多">更多>></a> </div>
+      <div class="profra">
+    <div class="caseleft"> {eyou:arclist titlelen='40' limit='0,1'}
+          <div class="block" data-rotate-y="180deg" data-move-z="-200px" data-move-x="-300px" > <a href="{$field.arcurl}" title="{$field.title}"><img src="{$field.litpic}" alt="{$field.title}" width="235" height="365" /></a> </div>
+        </div>
+    {/eyou:arclist}
+    <div class="caseright"> {eyou:arclist titlelen='40' limit='1,7'}
+          <div class="limg">
+        <div class="block" d ><a class="img" href="{$field.arcurl}" title="{$field.title}"><span></span><b></b>
+          <label>{$field.title}</label>
+          <img src="{$field.litpic}" alt="{$field.title}" width="235" height="176" /></a></div>
+      </div>
+          {/eyou:arclist} </div>
+  </div>
+    </div>
+{/eyou:channelartlist} 
+<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/jquery.smoove.js"></script> 
+<script type="text/javascript">$('.block').smoove({offset:'10%'});</script>
+
+<!-- 底部 -->
+{eyou:include file="/template/pc/footer.htm" /}
+<!-- 底部 end-->
+</body>
+</html>

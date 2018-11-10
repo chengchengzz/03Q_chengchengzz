@@ -1,0 +1,186 @@
+{include file="public/layout" /}
+
+<body style="background-color: rgb(255, 255, 255); overflow: auto; cursor: default; -moz-user-select: inherit;">
+<div id="append_parent"></div>
+<div id="ajaxwaitid"></div>
+<div class="page">
+
+    <div class="flexigrid">
+        <div class="mDiv">
+            <div class="ftitle">
+                <h3>模板文件</h3>
+                <h5>(共{$list|count}条记录)</h5>
+            </div>
+            <div title="刷新数据" class="pReload"><i class="fa fa-refresh"></i></div>
+        </div>
+        <div class="hDiv">
+            <div class="hDivBox">
+                <table cellspacing="0" cellpadding="0" style="width: 100%">
+                    <thead>
+                    <tr>
+                        <th abbr="" axis="col3" class="">
+                            <div class="" style="padding-left:15px ">文件名</div>
+                        </th>
+                        <th abbr="" axis="col3" class="w200">
+                            <div class="tc">文件大小</div>
+                        </th>
+                        <th abbr="" axis="col6" class="w180">
+                            <div class="tc">更新时间</div>
+                        </th>
+                        <th axis="col1" class="w120">
+                            <div class="tc">操作</div>
+                        </th>
+                       
+                    </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+        <div class="bDiv" style="height: auto;">
+            <div id="flexigrid" cellpadding="0" cellspacing="0" border="0">
+                <table style="width: 100%">
+                    <tbody>
+                    {empty name="list"}
+                        <tr>
+                            <td class="no-data" align="center" axis="col0" colspan="50">
+                                <i class="fa fa-exclamation-circle"></i>没有符合条件的记录
+                            </td>
+                        </tr>
+                    {else/}
+                        {foreach name="list" item="vo" key="k" }
+                        <tr>
+                            <td style="width: 100%">
+                                <div style="text-align: left; padding-left: 15px;">
+                                  {if condition="in_array($vo['filetype'], array('dir','dir2'))"}
+                                  <a href="{:url('Filemanager/index', array('activepath'=>urlencode($vo.filepath)))}"><img src="__SKIN__/images/{$vo.icon}" border="0" width="16" height="16" align="absmiddle">&nbsp;{$vo.filename}</a>
+                                  {else /}
+                                    {notempty name="$vo.icon"}
+                                    <img src="__SKIN__/images/{$vo.icon}" border="0" width="16" height="16" align="absmiddle">
+                                    {/notempty}
+                                    &nbsp;
+                                    <a href="{:U('Filemanager/edit',array('filename'=>$vo['filename'], 'activepath'=>urlencode(dirname($vo['filepath']))))}">{$vo.filename}</a>
+                                  {/if}
+                                  {$vo.intro}
+                                </div>
+                            </td>
+                            <td class="">
+                                <div class="w200 tc">
+                                  {$vo.filesize|default=''}
+                                </div>
+                            </td>
+                            <td class="">
+                                <div class="w180 tc">
+                                  {notempty name="$vo.filetime"}
+                                  {$vo.filetime|date='Y-m-d H:i:s',###}
+                                  {/notempty}
+                                </div>
+                            </td>
+                            <td class="">
+                                <div class="w120 tc">
+                                  {if condition="in_array($vo['filetype'], $editOpArr)"}
+                                    {eq name="'Filemanager@edit'|is_check_access" value="1"}
+                                    <a href="{:U('Filemanager/edit',array('filename'=>$vo['filename'], 'activepath'=>urlencode(dirname($vo['filepath']))))}" class="btn blue"><i class="fa fa-pencil-square-o"></i>编辑</a>
+                                    {/eq}
+                                  {/if}
+                                  {if condition="in_array($vo['filetype'], $renameOpArr)"}
+                                    {eq name="'Filemanager@rename'|is_check_access" value="1"}
+                                    <!-- <a href="{:U('Filemanager/rename',array('filename'=>$vo['filename'], 'activepath'=>urlencode(dirname($vo['filepath']))))}" class="btn blue"><i class="fa fa-pencil-square-o"></i>改名</a> -->
+                                    {/eq}
+                                  {/if}
+                                  {if condition="in_array($vo['filetype'], $delOpArr)"}
+                                    {eq name="'Filemanager@del'|is_check_access" value="1"}
+                                    <!-- <a class="btn red" href="javascript:void(0);" data-filename="{$vo['filename']}" data-activepath="{$vo['filepath']|dirname}" data-url="{:U('Filemanager/del')}" onClick="delfilename(this);"><i class="fa fa-trash-o"></i>删除</a> -->
+                                    {/eq}
+                                  {/if}
+                                  {if condition="in_array($vo['filetype'], $moveOpArr)"}
+                                    {eq name="'Filemanager@move'|is_check_access" value="1"}
+                                    <!-- <a href="{:U('Filemanager/move',array('filename'=>$vo['filename'], 'activepath'=>urlencode(dirname($vo['filepath']))))}" class="btn blue"><i class="fa fa-pencil-square-o"></i>移动</a> -->
+                                    {/eq}
+                                  {/if}
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        {/foreach}
+                    {/empty}
+                    </tbody>
+                </table>
+            </div>
+            <div class="iDiv" style="display: none;"></div>
+        </div>
+        <div class="tDiv">
+            <div class="tDiv2">
+                {eq name="'Filemanager@newfile'|is_check_access" value="1"}
+                <div class="fbutton">
+                    <a href="{:U('Filemanager/newfile', array('activepath'=>urlencode($activepath)))}">
+                        <div class="add" title="新建文件">
+                            <span><i class="fa fa-file"></i>新建文件</span>
+                        </div>
+                    </a>
+                </div>
+                {/eq}
+                {eq name="'Filemanager@newdir'|is_check_access" value="1"}
+                <!-- <div class="fbutton">
+                    <a href="{:U('Filemanager/newdir', array('activepath'=>urlencode($activepath)))}">
+                        <div class="add" title="新建目录">
+                            <span><i class="fa fa-folder"></i>新建目录</span>
+                        </div>
+                    </a>
+                </div> -->
+                {/eq}
+                {eq name="'Filemanager@upload'|is_check_access" value="1"}
+                <!-- <div class="fbutton">
+                    <a href="{:U('Filemanager/upload', array('activepath'=>urlencode($activepath)))}">
+                        <div class="add" title="文件上传">
+                            <span><i class="fa fa-upload"></i>文件上传</span>
+                        </div>
+                    </a>
+                </div> -->
+                {/eq}
+            </div>
+            <div style="clear:both"></div>
+        </div>
+        <!--分页位置-->
+    </div>
+</div>
+<form class="none" id="post_del" method="POST" action="">
+  <input type="hidden" name="filename" value="">
+  <input type="hidden" name="activepath" value="">
+</form>
+<script type="text/javascript">
+    $(document).ready(function(){
+
+        // 表格行点击选中切换
+        $('#flexigrid > table>tbody >tr').click(function(){
+            $(this).toggleClass('trSelected');
+        });
+
+        // 点击刷新数据
+        $('.fa-refresh').click(function(){
+            location.href = location.href;
+        });
+    });
+
+    function delfilename(obj, formid) {
+        layer.confirm('此操作不可逆，确认删除？', {
+              btn: ['确定','取消'] //按钮
+            }, function(){
+                // 确定
+                var form = $('#post_del');
+                var filename = $(obj).attr('data-filename');
+                var activepath = $(obj).attr('data-activepath');
+                var url = $(obj).attr('data-url');
+                $(form).find('input[name=filename]').val(filename);
+                $(form).find('input[name=activepath]').val(activepath);
+                $(form).attr('action', url);
+                layer_loading('正在处理');
+                $('#post_del').submit();
+            }, function(index){
+                layer.close(index);
+                return false;// 取消
+            }
+        );
+    }
+</script>
+
+{include file="public/footer" /}

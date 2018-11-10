@@ -1,0 +1,1223 @@
+---------------------------------------------------------------
+[ 2017-12-18T15:51:15+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ info ] www.demo_public.com/ [运行时间：0.050332s][吞吐率：19.87req/s] [内存消耗：1,012.09kb] [文件加载：33]
+[ info ] [ LANG ] D:\www\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=6105828352; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1512978669,1513041627',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'www.demo_public.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\www\demo\app\home\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-18T15:51:45+08:00 ] 127.0.0.1 127.0.0.1 GET /admin
+[ info ] www.demo_public.com/admin [运行时间：0.035147s][吞吐率：28.45req/s] [内存消耗：1,089.68kb] [文件加载：34]
+[ info ] [ LANG ] D:\www\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=6105828352; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1512978669,1513041627',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'www.demo_public.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-18T15:51:46+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/publics/login.html
+[ info ] www.demo_public.com/admin/publics/login.html [运行时间：0.026995s][吞吐率：37.04req/s] [内存消耗：1,227.90kb] [文件加载：38]
+[ info ] [ LANG ] D:\www\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'publics',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=6105828352; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1512978669,1513041627; PHPSESSID=5dovhnkbrhqr5ijm3jg773q077',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'www.demo_public.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Publics->login[ D:\www\demo\app\admin\controller\Publics.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\www\demo\public/../app/admin\view\publics\login.html [ array (
+  0 => 'version',
+  1 => 'systime',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-18T15:51:46+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/publics/verify.html
+[ info ] www.demo_public.com/admin/publics/verify.html [运行时间：0.027404s][吞吐率：36.49req/s] [内存消耗：1,095.98kb] [文件加载：34]
+[ info ] [ LANG ] D:\www\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'publics',
+    2 => 'verify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=6105828352; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1512978669,1513041627; PHPSESSID=5dovhnkbrhqr5ijm3jg773q077',
+  'referer' => 'http://www.demo_public.com/admin/publics/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'www.demo_public.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Publics->verify[ D:\www\demo\app\admin\controller\Publics.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-18T15:51:46+08:00 ] 127.0.0.1 127.0.0.1 GET /static/admin/images/loginbg_07.jpg
+[ info ] www.demo_public.com/static/admin/images/loginbg_07.jpg [运行时间：0.018784s][吞吐率：53.24req/s] [内存消耗：812.07kb] [文件加载：26]
+[ info ] [ LANG ] D:\www\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=6105828352; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1512978669,1513041627; PHPSESSID=5dovhnkbrhqr5ijm3jg773q077',
+  'referer' => 'http://www.demo_public.com/admin/publics/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'www.demo_public.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-18T15:51:47+08:00 ] 127.0.0.1 127.0.0.1 GET /static/admin/images/loginbg_06.jpg
+[ info ] www.demo_public.com/static/admin/images/loginbg_06.jpg [运行时间：0.029360s][吞吐率：34.06req/s] [内存消耗：812.07kb] [文件加载：26]
+[ info ] [ LANG ] D:\www\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=6105828352; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1512978669,1513041627; PHPSESSID=5dovhnkbrhqr5ijm3jg773q077',
+  'referer' => 'http://www.demo_public.com/admin/publics/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'www.demo_public.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-18T15:52:14+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/publics/dologin.html
+[ info ] www.demo_public.com/admin/publics/dologin.html [运行时间：0.049657s][吞吐率：20.14req/s] [内存消耗：1,669.38kb] [文件加载：42]
+[ info ] [ LANG ] D:\www\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'publics',
+    2 => 'dologin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=6105828352; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1512978669,1513041627; PHPSESSID=5dovhnkbrhqr5ijm3jg773q077',
+  'content-length' => '44',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www.demo_public.com/admin/publics/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'www.demo_public.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admins',
+  'password' => 'admins',
+  'verify' => '4zqqn',
+)
+[ info ] [ RUN ] app\admin\controller\Publics->dologin[ D:\www\demo\app\admin\controller\Publics.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [1049]SQLSTATE[HY000] [1049] Unknown database 'venuscmf'[D:\www\demo\thinkphp\library\think\db\Connection.php:293]
+---------------------------------------------------------------
+[ 2017-12-18T15:52:23+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/publics/login.html
+[ info ] www.demo_public.com/admin/publics/login.html [运行时间：0.032059s][吞吐率：31.19req/s] [内存消耗：1,111.27kb] [文件加载：36]
+[ info ] [ LANG ] D:\www\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'publics',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=6105828352; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1512978669,1513041627; PHPSESSID=5dovhnkbrhqr5ijm3jg773q077',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'www.demo_public.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Publics->login[ D:\www\demo\app\admin\controller\Publics.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\www\demo\public/../app/admin\view\publics\login.html [ array (
+  0 => 'version',
+  1 => 'systime',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-18T15:52:23+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/publics/verify.html
+[ info ] www.demo_public.com/admin/publics/verify.html [运行时间：0.034933s][吞吐率：28.63req/s] [内存消耗：1,096.21kb] [文件加载：34]
+[ info ] [ LANG ] D:\www\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'publics',
+    2 => 'verify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=6105828352; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1512978669,1513041627; PHPSESSID=5dovhnkbrhqr5ijm3jg773q077',
+  'referer' => 'http://www.demo_public.com/admin/publics/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'www.demo_public.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Publics->verify[ D:\www\demo\app\admin\controller\Publics.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-18T15:52:23+08:00 ] 127.0.0.1 127.0.0.1 GET /static/admin/images/loginbg_05.jpg
+[ info ] www.demo_public.com/static/admin/images/loginbg_05.jpg [运行时间：0.022784s][吞吐率：43.89req/s] [内存消耗：812.07kb] [文件加载：26]
+[ info ] [ LANG ] D:\www\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=6105828352; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1512978669,1513041627; PHPSESSID=5dovhnkbrhqr5ijm3jg773q077',
+  'referer' => 'http://www.demo_public.com/admin/publics/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'www.demo_public.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-18T15:52:24+08:00 ] 127.0.0.1 127.0.0.1 GET /static/admin/images/loginbg_06.jpg
+[ info ] www.demo_public.com/static/admin/images/loginbg_06.jpg [运行时间：0.050276s][吞吐率：19.89req/s] [内存消耗：812.40kb] [文件加载：26]
+[ info ] [ LANG ] D:\www\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=6105828352; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1512978669,1513041627; PHPSESSID=5dovhnkbrhqr5ijm3jg773q077',
+  'referer' => 'http://www.demo_public.com/admin/publics/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'www.demo_public.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-18T15:52:30+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/publics/dologin.html
+[ info ] www.demo_public.com/admin/publics/dologin.html [运行时间：0.028485s][吞吐率：35.11req/s] [内存消耗：1,108.59kb] [文件加载：36]
+[ info ] [ LANG ] D:\www\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'publics',
+    2 => 'dologin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=6105828352; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1512978669,1513041627; PHPSESSID=5dovhnkbrhqr5ijm3jg773q077',
+  'content-length' => '44',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www.demo_public.com/admin/publics/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'www.demo_public.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admins',
+  'password' => 'admins',
+  'verify' => 'hs8ky',
+)
+[ info ] [ RUN ] app\admin\controller\Publics->dologin[ D:\www\demo\app\admin\controller\Publics.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-18T15:52:32+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/publics/verify/time/0.6489366153310265.html
+[ info ] www.demo_public.com/admin/publics/verify/time/0.6489366153310265.html [运行时间：0.039627s][吞吐率：25.24req/s] [内存消耗：1,096.54kb] [文件加载：34]
+[ info ] [ LANG ] D:\www\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'publics',
+    2 => 'verify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=6105828352; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1512978669,1513041627; PHPSESSID=5dovhnkbrhqr5ijm3jg773q077',
+  'referer' => 'http://www.demo_public.com/admin/publics/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'www.demo_public.com',
+)
+[ info ] [ PARAM ] array (
+  'time' => '0.6489366153310265',
+)
+[ info ] [ RUN ] app\admin\controller\Publics->verify[ D:\www\demo\app\admin\controller\Publics.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-18T15:52:37+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/publics/dologin.html
+[ info ] www.demo_public.com/admin/publics/dologin.html [运行时间：0.039442s][吞吐率：25.35req/s] [内存消耗：1,669.46kb] [文件加载：42]
+[ info ] [ LANG ] D:\www\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'publics',
+    2 => 'dologin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=6105828352; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1512978669,1513041627; PHPSESSID=5dovhnkbrhqr5ijm3jg773q077',
+  'content-length' => '44',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www.demo_public.com/admin/publics/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'www.demo_public.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admins',
+  'password' => 'admins',
+  'verify' => 'ycxlu',
+)
+[ info ] [ RUN ] app\admin\controller\Publics->dologin[ D:\www\demo\app\admin\controller\Publics.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [1049]SQLSTATE[HY000] [1049] Unknown database 'venuscmf'[D:\www\demo\thinkphp\library\think\db\Connection.php:293]
+---------------------------------------------------------------
+[ 2017-12-18T15:52:47+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/publics/dologin.html
+[ info ] www.demo_public.com/admin/publics/dologin.html [运行时间：0.028083s][吞吐率：35.61req/s] [内存消耗：1,211.77kb] [文件加载：40]
+[ info ] [ LANG ] D:\www\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'publics',
+    2 => 'dologin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=6105828352; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1512978669,1513041627; PHPSESSID=5dovhnkbrhqr5ijm3jg773q077',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'www.demo_public.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Publics->dologin[ D:\www\demo\app\admin\controller\Publics.php ]
+[ info ] [ VIEW ] D:\www\demo\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'version',
+  1 => 'systime',
+  2 => 'code',
+  3 => 'msg',
+  4 => 'data',
+  5 => 'url',
+  6 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: username[D:\www\demo\app\admin\controller\Publics.php:131]
+[ error ] [8]未定义数组索引: password[D:\www\demo\app\admin\controller\Publics.php:132]
+[ error ] [8]未定义数组索引: verify[D:\www\demo\app\admin\controller\Publics.php:133]
+---------------------------------------------------------------
+[ 2017-12-18T15:53:37+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/publics/login.html
+[ info ] www.demo_public.com/admin/publics/login.html [运行时间：0.022201s][吞吐率：45.04req/s] [内存消耗：1,111.27kb] [文件加载：36]
+[ info ] [ LANG ] D:\www\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'publics',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=6105828352; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1512978669,1513041627; PHPSESSID=5dovhnkbrhqr5ijm3jg773q077',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'www.demo_public.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Publics->login[ D:\www\demo\app\admin\controller\Publics.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\www\demo\public/../app/admin\view\publics\login.html [ array (
+  0 => 'version',
+  1 => 'systime',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-18T15:53:37+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/publics/verify.html
+[ info ] www.demo_public.com/admin/publics/verify.html [运行时间：0.025852s][吞吐率：38.68req/s] [内存消耗：1,096.27kb] [文件加载：34]
+[ info ] [ LANG ] D:\www\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'publics',
+    2 => 'verify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=6105828352; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1512978669,1513041627; PHPSESSID=5dovhnkbrhqr5ijm3jg773q077',
+  'referer' => 'http://www.demo_public.com/admin/publics/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'www.demo_public.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Publics->verify[ D:\www\demo\app\admin\controller\Publics.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-18T15:53:37+08:00 ] 127.0.0.1 127.0.0.1 GET /static/admin/images/loginbg_06.jpg
+[ info ] www.demo_public.com/static/admin/images/loginbg_06.jpg [运行时间：0.017674s][吞吐率：56.58req/s] [内存消耗：812.40kb] [文件加载：26]
+[ info ] [ LANG ] D:\www\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=6105828352; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1512978669,1513041627; PHPSESSID=5dovhnkbrhqr5ijm3jg773q077',
+  'referer' => 'http://www.demo_public.com/admin/publics/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'www.demo_public.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-18T15:53:37+08:00 ] 127.0.0.1 127.0.0.1 GET /static/admin/images/loginbg_07.jpg
+[ info ] www.demo_public.com/static/admin/images/loginbg_07.jpg [运行时间：0.017540s][吞吐率：57.01req/s] [内存消耗：812.40kb] [文件加载：26]
+[ info ] [ LANG ] D:\www\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=6105828352; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1512978669,1513041627; PHPSESSID=5dovhnkbrhqr5ijm3jg773q077',
+  'referer' => 'http://www.demo_public.com/admin/publics/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'www.demo_public.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-18T15:53:44+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/publics/verify/time/0.760148004150472.html
+[ info ] www.demo_public.com/admin/publics/verify/time/0.760148004150472.html [运行时间：0.022416s][吞吐率：44.61req/s] [内存消耗：1,096.49kb] [文件加载：34]
+[ info ] [ LANG ] D:\www\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'publics',
+    2 => 'verify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=6105828352; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1512978669,1513041627; PHPSESSID=5dovhnkbrhqr5ijm3jg773q077',
+  'referer' => 'http://www.demo_public.com/admin/publics/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'www.demo_public.com',
+)
+[ info ] [ PARAM ] array (
+  'time' => '0.760148004150472',
+)
+[ info ] [ RUN ] app\admin\controller\Publics->verify[ D:\www\demo\app\admin\controller\Publics.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-18T15:53:47+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/publics/dologin.html
+[ info ] www.demo_public.com/admin/publics/dologin.html [运行时间：0.047913s][吞吐率：20.87req/s] [内存消耗：1,821.03kb] [文件加载：47]
+[ info ] [ LANG ] D:\www\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'publics',
+    2 => 'dologin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=6105828352; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1512978669,1513041627; PHPSESSID=5dovhnkbrhqr5ijm3jg773q077',
+  'content-length' => '44',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www.demo_public.com/admin/publics/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'www.demo_public.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admins',
+  'password' => 'admins',
+  'verify' => 'xsl7q',
+)
+[ info ] [ RUN ] app\admin\controller\Publics->dologin[ D:\www\demo\app\admin\controller\Publics.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000856s ] mysql:dbname=demo_664;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ven_users` [ RunTime:0.007369s ]
+[ sql ] [ SQL ] SELECT * FROM `ven_users` WHERE  `name` = 'admins' LIMIT 1 [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SELECT `status` FROM `ven_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000396s ]
+[ sql ] [ SQL ] UPDATE `ven_users`  SET `login_ip`=2130706433,`time_login`=1513583627,`login_count`=26  WHERE  `id` = 1 [ RunTime:0.001556s ]
+---------------------------------------------------------------
+[ 2017-12-18T15:53:49+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/index.html
+[ info ] www.demo_public.com/admin/index/index.html [运行时间：0.068769s][吞吐率：14.54req/s] [内存消耗：2,241.13kb] [文件加载：52]
+[ info ] [ LANG ] D:\www\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=6105828352; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1512978669,1513041627; PHPSESSID=5dovhnkbrhqr5ijm3jg773q077',
+  'referer' => 'http://www.demo_public.com/admin/publics/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'www.demo_public.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\www\demo\app\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\www\demo\public/../app/admin\view\index\index.html [ array (
+  0 => 'version',
+  1 => 'systime',
+  2 => 'sidebar',
+  3 => 'nowmenuname',
+  4 => 'username',
+  5 => 'sysinfo',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010360s ] mysql:dbname=demo_664;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ven_users` [ RunTime:0.006127s ]
+[ sql ] [ SQL ] SELECT `status` FROM `ven_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001669s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ven_menu` [ RunTime:0.007476s ]
+[ sql ] [ SQL ] SELECT * FROM `ven_menu` ORDER BY `path`  asc [ RunTime:0.000709s ]
+---------------------------------------------------------------
+[ 2017-12-18T15:53:51+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/category/index.html
+[ info ] www.demo_public.com/admin/category/index.html [运行时间：0.058367s][吞吐率：17.13req/s] [内存消耗：2,318.63kb] [文件加载：53]
+[ info ] [ LANG ] D:\www\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=6105828352; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1512978669,1513041627; PHPSESSID=5dovhnkbrhqr5ijm3jg773q077',
+  'referer' => 'http://www.demo_public.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'www.demo_public.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Category->index[ D:\www\demo\app\admin\controller\Category.php ]
+[ info ] [ VIEW ] D:\www\demo\public/../app/admin\view\category\index.html [ array (
+  0 => 'version',
+  1 => 'systime',
+  2 => 'sidebar',
+  3 => 'nowmenuname',
+  4 => 'username',
+  5 => 'categorylists',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001388s ] mysql:dbname=demo_664;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ven_users` [ RunTime:0.006701s ]
+[ sql ] [ SQL ] SELECT `status` FROM `ven_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ven_category` [ RunTime:0.006513s ]
+[ sql ] [ SQL ] SELECT * FROM `ven_category` ORDER BY `path`  asc [ RunTime:0.000478s ]
+---------------------------------------------------------------
+[ 2017-12-18T15:53:52+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/article/index.html
+[ info ] www.demo_public.com/admin/article/index.html [运行时间：0.068832s][吞吐率：14.53req/s] [内存消耗：2,325.89kb] [文件加载：54]
+[ info ] [ LANG ] D:\www\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=6105828352; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1512978669,1513041627; PHPSESSID=5dovhnkbrhqr5ijm3jg773q077',
+  'referer' => 'http://www.demo_public.com/admin/category/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'www.demo_public.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Article->index[ D:\www\demo\app\admin\controller\Article.php ]
+[ info ] [ VIEW ] D:\www\demo\public/../app/admin\view\article\index.html [ array (
+  0 => 'version',
+  1 => 'systime',
+  2 => 'sidebar',
+  3 => 'nowmenuname',
+  4 => 'username',
+  5 => 'lists',
+  6 => 'allpages',
+  7 => 'nowpage',
+  8 => 'startime',
+  9 => 'endtime',
+  10 => 'title',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009863s ] mysql:dbname=demo_664;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ven_users` [ RunTime:0.006264s ]
+[ sql ] [ SQL ] SELECT `status` FROM `ven_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ven_article` [ RunTime:0.007479s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ven_article` LIMIT 1 [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SELECT * FROM `ven_article` ORDER BY id desc LIMIT 0,10 [ RunTime:0.000379s ]
+---------------------------------------------------------------
+[ 2017-12-18T15:53:56+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/category/index.html
+[ info ] www.demo_public.com/admin/category/index.html [运行时间：0.065496s][吞吐率：15.27req/s] [内存消耗：2,180.95kb] [文件加载：51]
+[ info ] [ LANG ] D:\www\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=6105828352; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1512978669,1513041627; PHPSESSID=5dovhnkbrhqr5ijm3jg773q077; edit_back_referrer=',
+  'referer' => 'http://www.demo_public.com/admin/article/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'www.demo_public.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Category->index[ D:\www\demo\app\admin\controller\Category.php ]
+[ info ] [ VIEW ] D:\www\demo\public/../app/admin\view\category\index.html [ array (
+  0 => 'version',
+  1 => 'systime',
+  2 => 'sidebar',
+  3 => 'nowmenuname',
+  4 => 'username',
+  5 => 'categorylists',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011310s ] mysql:dbname=demo_664;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ven_users` [ RunTime:0.005980s ]
+[ sql ] [ SQL ] SELECT `status` FROM `ven_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ven_category` [ RunTime:0.006253s ]
+[ sql ] [ SQL ] SELECT * FROM `ven_category` ORDER BY `path`  asc [ RunTime:0.000501s ]
+---------------------------------------------------------------
+[ 2017-12-18T15:53:56+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/article/index.html
+[ info ] www.demo_public.com/admin/article/index.html [运行时间：0.064310s][吞吐率：15.55req/s] [内存消耗：2,189.17kb] [文件加载：52]
+[ info ] [ LANG ] D:\www\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=6105828352; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1512978669,1513041627; PHPSESSID=5dovhnkbrhqr5ijm3jg773q077; edit_back_referrer=',
+  'referer' => 'http://www.demo_public.com/admin/category/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'www.demo_public.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Article->index[ D:\www\demo\app\admin\controller\Article.php ]
+[ info ] [ VIEW ] D:\www\demo\public/../app/admin\view\article\index.html [ array (
+  0 => 'version',
+  1 => 'systime',
+  2 => 'sidebar',
+  3 => 'nowmenuname',
+  4 => 'username',
+  5 => 'lists',
+  6 => 'allpages',
+  7 => 'nowpage',
+  8 => 'startime',
+  9 => 'endtime',
+  10 => 'title',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011385s ] mysql:dbname=demo_664;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ven_users` [ RunTime:0.007672s ]
+[ sql ] [ SQL ] SELECT `status` FROM `ven_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ven_article` [ RunTime:0.007705s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ven_article` LIMIT 1 [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SELECT * FROM `ven_article` ORDER BY id desc LIMIT 0,10 [ RunTime:0.000374s ]
+---------------------------------------------------------------
+[ 2017-12-18T16:01:11+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/article/index.html?title=&startime=&endtime=
+[ info ] www.demo_public.com/admin/article/index.html?title=&startime=&endtime= [运行时间：0.054826s][吞吐率：18.24req/s] [内存消耗：2,189.91kb] [文件加载：52]
+[ info ] [ LANG ] D:\www\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=6105828352; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1512978669,1513041627; PHPSESSID=5dovhnkbrhqr5ijm3jg773q077; edit_back_referrer=',
+  'referer' => 'http://www.demo_public.com/admin/article/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'www.demo_public.com',
+)
+[ info ] [ PARAM ] array (
+  'title' => '',
+  'startime' => '',
+  'endtime' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Article->index[ D:\www\demo\app\admin\controller\Article.php ]
+[ info ] [ VIEW ] D:\www\demo\public/../app/admin\view\article\index.html [ array (
+  0 => 'version',
+  1 => 'systime',
+  2 => 'sidebar',
+  3 => 'nowmenuname',
+  4 => 'username',
+  5 => 'lists',
+  6 => 'allpages',
+  7 => 'nowpage',
+  8 => 'startime',
+  9 => 'endtime',
+  10 => 'title',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002611s ] mysql:dbname=demo_664;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ven_users` [ RunTime:0.007199s ]
+[ sql ] [ SQL ] SELECT `status` FROM `ven_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ven_article` [ RunTime:0.006553s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ven_article` LIMIT 1 [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SELECT * FROM `ven_article` ORDER BY id desc LIMIT 0,10 [ RunTime:0.000337s ]
+---------------------------------------------------------------
+[ 2017-12-18T16:01:13+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/article/add.html
+[ info ] www.demo_public.com/admin/article/add.html [运行时间：0.065256s][吞吐率：15.32req/s] [内存消耗：2,326.89kb] [文件加载：54]
+[ info ] [ LANG ] D:\www\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=6105828352; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1512978669,1513041627; PHPSESSID=5dovhnkbrhqr5ijm3jg773q077; edit_back_referrer=',
+  'referer' => 'http://www.demo_public.com/admin/article/index.html?title=&startime=&endtime=',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'www.demo_public.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Article->add[ D:\www\demo\app\admin\controller\Article.php ]
+[ info ] [ VIEW ] D:\www\demo\public/../app/admin\view\article\add.html [ array (
+  0 => 'version',
+  1 => 'systime',
+  2 => 'sidebar',
+  3 => 'nowmenuname',
+  4 => 'username',
+  5 => 'categorylists',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000829s ] mysql:dbname=demo_664;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ven_users` [ RunTime:0.006614s ]
+[ sql ] [ SQL ] SELECT `status` FROM `ven_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ven_category` [ RunTime:0.007280s ]
+[ sql ] [ SQL ] SELECT * FROM `ven_category` ORDER BY `path`  asc [ RunTime:0.000505s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ven_category` WHERE  `pid` = 1 LIMIT 1 [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ven_category` WHERE  `pid` = 2 LIMIT 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ven_category` WHERE  `pid` = 15 LIMIT 1 [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ven_category` WHERE  `pid` = 3 LIMIT 1 [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ven_category` WHERE  `pid` = 16 LIMIT 1 [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ven_category` WHERE  `pid` = 4 LIMIT 1 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ven_category` WHERE  `pid` = 17 LIMIT 1 [ RunTime:0.000271s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ven_category` WHERE  `pid` = 5 LIMIT 1 [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ven_category` WHERE  `pid` = 6 LIMIT 1 [ RunTime:0.000227s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ven_category` WHERE  `pid` = 12 LIMIT 1 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ven_category` WHERE  `pid` = 18 LIMIT 1 [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ven_category` WHERE  `pid` = 19 LIMIT 1 [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ven_category` WHERE  `pid` = 7 LIMIT 1 [ RunTime:0.000244s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ven_category` WHERE  `pid` = 13 LIMIT 1 [ RunTime:0.000265s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ven_category` WHERE  `pid` = 20 LIMIT 1 [ RunTime:0.000233s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ven_category` WHERE  `pid` = 21 LIMIT 1 [ RunTime:0.000251s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ven_category` WHERE  `pid` = 8 LIMIT 1 [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ven_category` WHERE  `pid` = 14 LIMIT 1 [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ven_category` WHERE  `pid` = 9 LIMIT 1 [ RunTime:0.000506s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ven_category` WHERE  `pid` = 10 LIMIT 1 [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ven_category` WHERE  `pid` = 11 LIMIT 1 [ RunTime:0.000248s ]
+---------------------------------------------------------------
+[ 2017-12-18T16:01:13+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/ueditor/doupload/savepath/article.html?action=config&&noCache=1513584073459
+[ info ] www.demo_public.com/admin/ueditor/doupload/savepath/article.html?action=config&&noCache=1513584073459 [运行时间：0.043344s][吞吐率：23.07req/s] [内存消耗：2,084.29kb] [文件加载：48]
+[ info ] [ LANG ] D:\www\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ueditor',
+    2 => 'doupload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=6105828352; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1512978669,1513041627; PHPSESSID=5dovhnkbrhqr5ijm3jg773q077; edit_back_referrer=',
+  'referer' => 'http://www.demo_public.com/admin/article/add.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'www.demo_public.com',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'config',
+  'noCache' => '1513584073459',
+  'savepath' => 'article',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Ueditor->doupload[ D:\www\demo\app\admin\controller\Ueditor.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001003s ] mysql:dbname=demo_664;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ven_users` [ RunTime:0.010433s ]
+[ sql ] [ SQL ] SELECT `status` FROM `ven_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000263s ]
+---------------------------------------------------------------
+[ 2017-12-18T16:08:05+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/article/add.html
+[ info ] www.demo_public.com/admin/article/add.html [运行时间：0.072632s][吞吐率：13.77req/s] [内存消耗：2,327.20kb] [文件加载：54]
+[ info ] [ LANG ] D:\www\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=6105828352; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1512978669,1513041627; PHPSESSID=5dovhnkbrhqr5ijm3jg773q077; edit_back_referrer=',
+  'referer' => 'http://www.demo_public.com/admin/article/index.html?title=&startime=&endtime=',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'www.demo_public.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Article->add[ D:\www\demo\app\admin\controller\Article.php ]
+[ info ] [ VIEW ] D:\www\demo\public/../app/admin\view\article\add.html [ array (
+  0 => 'version',
+  1 => 'systime',
+  2 => 'sidebar',
+  3 => 'nowmenuname',
+  4 => 'username',
+  5 => 'categorylists',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010603s ] mysql:dbname=demo_664;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ven_users` [ RunTime:0.005991s ]
+[ sql ] [ SQL ] SELECT `status` FROM `ven_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ven_category` [ RunTime:0.006034s ]
+[ sql ] [ SQL ] SELECT * FROM `ven_category` ORDER BY `path`  asc [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ven_category` WHERE  `pid` = 1 LIMIT 1 [ RunTime:0.000249s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ven_category` WHERE  `pid` = 2 LIMIT 1 [ RunTime:0.000224s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ven_category` WHERE  `pid` = 15 LIMIT 1 [ RunTime:0.000231s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ven_category` WHERE  `pid` = 3 LIMIT 1 [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ven_category` WHERE  `pid` = 16 LIMIT 1 [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ven_category` WHERE  `pid` = 4 LIMIT 1 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ven_category` WHERE  `pid` = 17 LIMIT 1 [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ven_category` WHERE  `pid` = 5 LIMIT 1 [ RunTime:0.000194s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ven_category` WHERE  `pid` = 6 LIMIT 1 [ RunTime:0.000219s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ven_category` WHERE  `pid` = 12 LIMIT 1 [ RunTime:0.000183s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ven_category` WHERE  `pid` = 18 LIMIT 1 [ RunTime:0.000188s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ven_category` WHERE  `pid` = 19 LIMIT 1 [ RunTime:0.000187s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ven_category` WHERE  `pid` = 7 LIMIT 1 [ RunTime:0.000180s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ven_category` WHERE  `pid` = 13 LIMIT 1 [ RunTime:0.000184s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ven_category` WHERE  `pid` = 20 LIMIT 1 [ RunTime:0.000162s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ven_category` WHERE  `pid` = 21 LIMIT 1 [ RunTime:0.000157s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ven_category` WHERE  `pid` = 8 LIMIT 1 [ RunTime:0.000155s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ven_category` WHERE  `pid` = 14 LIMIT 1 [ RunTime:0.000155s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ven_category` WHERE  `pid` = 9 LIMIT 1 [ RunTime:0.000153s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ven_category` WHERE  `pid` = 10 LIMIT 1 [ RunTime:0.000154s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ven_category` WHERE  `pid` = 11 LIMIT 1 [ RunTime:0.000172s ]
+---------------------------------------------------------------
+[ 2017-12-18T16:08:05+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/ueditor/doupload/savepath/article.html?action=config&&noCache=1513584485607
+[ info ] www.demo_public.com/admin/ueditor/doupload/savepath/article.html?action=config&&noCache=1513584485607 [运行时间：0.037667s][吞吐率：26.55req/s] [内存消耗：2,084.25kb] [文件加载：48]
+[ info ] [ LANG ] D:\www\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ueditor',
+    2 => 'doupload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=6105828352; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1512978669,1513041627; PHPSESSID=5dovhnkbrhqr5ijm3jg773q077; edit_back_referrer=',
+  'referer' => 'http://www.demo_public.com/admin/article/add.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'www.demo_public.com',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'config',
+  'noCache' => '1513584485607',
+  'savepath' => 'article',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Ueditor->doupload[ D:\www\demo\app\admin\controller\Ueditor.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000640s ] mysql:dbname=demo_664;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ven_users` [ RunTime:0.007314s ]
+[ sql ] [ SQL ] SELECT `status` FROM `ven_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000261s ]

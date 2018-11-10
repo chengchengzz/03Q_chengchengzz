@@ -1,0 +1,93 @@
+{include file="public/layout" /}
+
+<body style="background-color: #FFF; overflow: auto;">
+<div id="toolTipLayer" style="position: absolute; z-index: 9999; display: none; visibility: visible; left: 95px; top: 573px;"></div>
+<div id="append_parent"></div>
+<div id="ajaxwaitid"></div>
+<div class="page ksedit">
+    <div class="fixed-bar">
+        <div class="item-title">
+            <div class="subject">
+                <h3><i class="fa fa-edit"></i>快捷发布</h3>
+                <h5></h5>
+            </div>
+        </div>
+    </div>
+    <form class="form-horizontal" id="post_form" action="{:U('Archives/release')}" method="post">
+        <!-- 常规信息 -->
+        <div class="ncap-form-default">
+            <dl class="row">
+                <dt class="tit">
+                    <label for="title"><em>*</em>添加至</label>
+                </dt>
+                <dd class="opt">
+                    <select name="typeid" id="typeid">
+                        <option value="0">请选择栏目…</option>
+                        {$select_html}
+                    </select>
+                    <span class="err"></span>
+                    <p class="notic"></p>
+                </dd>
+            </dl>
+        </div>
+        <!-- 常规信息 -->
+        <div class="ncap-form-default">
+            <div class="bot">
+                <a href="JavaScript:void(0);" onclick="check_submit();" class="ncap-btn-big ncap-btn-green" id="submitBtn">确认提交</a>
+            </div>
+        </div> 
+    </form>
+</div>
+<script type="text/javascript">
+    $(function () {
+        /**
+         * 获取多级联动
+         */
+/*        function get_select_options(t,next){
+            var parent_id = $(t).val();
+            var url = $(t).attr('data-url');
+            if(!parent_id > 0 || url == ''){
+                return;
+            }
+            $('#typeid').val(parent_id);
+            url = url + '?pid='+ parent_id;
+            $.ajax({
+                type : "GET",
+                url  : url,
+                dataType: 'JSON',
+                error: function(request) {
+                    layer.closeAll();
+                    alert("服务器繁忙, 请联系管理员!");
+                    return;
+                },
+                success: function(data) {
+                    layer.closeAll();
+                    if (data.status == 1) {
+                        $('#'+next).html(data.msg).show();
+                    } else {
+                        $('#'+next).hide();
+                    }
+                }
+            });
+        }*/
+    });
+
+    // 判断输入框是否为空
+    function check_submit(){
+        if ($('#typeid').val() == 0) {
+            showErrorMsg('请选择栏目…！');
+            return false;
+        }
+        var current_channel = $('#typeid').find('option:selected').attr('data-current_channel');
+        current_channel = parseInt(current_channel);
+        var js_allow_channel_arr = {$js_allow_channel_arr};
+        if ($.inArray(current_channel, js_allow_channel_arr) == -1) {
+            showErrorMsg('该栏目不允许发布文档！');
+            return false;
+        }
+        layer_loading('正在处理');
+        $('#post_form').submit();
+    }
+</script>
+
+{include file="public/footer" /}

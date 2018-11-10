@@ -1,0 +1,34 @@
+<div class="footclear"></div>
+<div class="f_link">
+      <div class="main"><span>友情链接：</span> {eyou:flink titlelen='45' type='1'}<a href="{$field.url}" {$field.target}>{$field.title}</a>{/eyou:flink}</div>
+    </div>
+<div class="menuf" id="menu1">
+      <ul>
+    <li><a href="{eyou:global name='web_cmsurl' /}/" class="{eyou:eq name='$Think.const.CONTROLLER_NAME' value='Index'}cur{/eyou:eq}">网站首页</a> </li>
+    {eyou:channel type="top" row="9" id="field" currentstyle="cur"} 
+    <li><a href="{$field.typeurl}" class="{$field.currentstyle}">{$field.typename}</a></li>
+    {/eyou:channel}
+  </ul>
+      <div class="linkbut"><img src="{eyou:global name='web_templets_pc' /}/skin/img/bot.png"/></div>
+    </div>
+<div class="foot">
+      <div class="main">
+    <div class="bootTxt">
+          <div class="fl">地址：{eyou:global name='web_attr_56' /}&nbsp;&nbsp;&nbsp;电话：{eyou:global name='web_attr_2' /}&nbsp;&nbsp;&nbsp;传真：{eyou:global name='web_attr_57' /}<br />
+        版权所有：{eyou:global name='web_copyright' /}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ICP备案编号：{eyou:global name='web_recordnum' /}</div>
+          <div class="f_linkmap"></div>
+          <div class="share"><!-- Baidu Button BEGIN -->
+        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+        <!-- Baidu Button END --></div>
+        </div>
+  </div>
+    </div>
+    {eyou:global name='web_thirdcode_pc' /} 
+<!-- 应用插件标签 start --> 
+{eyou:weapp type='default' /} 
+<!-- 应用插件标签 end -->
+<div class="fixed"> <a href="{eyou:type typeid='53'}{$field.typeurl}{/eyou:type}" title="留言" class="barbook"></a> <a href="javascript:;" title="二维码" class="codepic"></a> <a href="javascript:;" title="返回顶部" class="backup"></a>
+      <div> <img src="{eyou:global name='web_attr_4' /}" alt="{eyou:global name="web_name" /}" class="code" /> </div>
+    </div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+	</script>

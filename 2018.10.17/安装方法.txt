@@ -1,0 +1,8 @@
+1.域名指向 public
+2.导入php_1793.sql
+3.修改 application\database.php
+
+后台：域名+/home
+
+账号 admin 密码 123456
+

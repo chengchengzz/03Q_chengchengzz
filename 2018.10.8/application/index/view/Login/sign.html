@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+</head>
+<body>
+<center>
+    <form action="{:url('Login/add_do')}" method="post" onsubmit="return login()">
+        <table border="1">
+            <h1>登录表</h1>
+            <a href="login">退出</a>
+            <tr>
+                <td class="left">用户名称:</td>
+                <td class="conter"><input type="text" id="username" name="username" class="in" onblur="checkuser()"></td>
+                <td><div id="user_prompt">用户名由英文字母和数字组成的4-16位字符，以字母开头</div></td>
+            </tr>
+            <tr>
+            <td class="left">用户密码:</td>
+            <td class="conter"><input type="password" id="password" name="password" class="in" onblur="checkpwd()"></td>
+            <td><div id="pwd_prompt">密码由英文字母和数字组成的4-10位字符</div></td>
+        </tr>
+            <tr>
+                <td><input type="submit" onclick="" value="登录"></td>
+                <td></td>
+            </tr>
+        </table>
+    </form>
+</center>
+</body>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script>
+    function $(elementId){
+        return document.getElementById(elementId).value;
+    }
+    function divId(elementId){
+        return document.getElementById(elementId);
+    }
+    /*用户名验证*/
+    function checkuser(){
+        var user=$("username");
+        var userId=divId("user_prompt");
+        userId.innerHTML="";
+        var reg=/^[a-zA-Z][a-zA-Z0-9]{3,15}$/;
+        if(reg.test(user)==false){
+            userId.innerHTML="用户名不正确";
+            return false;
+        }
+        return true;
+    }
+    //验证密码
+    function checkpwd(){
+        var pwd=$("password");
+        var pwdId=divId("pwd_prompt");
+        pwdId.innerHTML="";
+        var reg=/^[a-zA-Z0-9]{4,10}$/;
+        if(reg.test(pwd)==false){
+            pwdId.innerHTML="密码不能含有非法字符，长度在4-10之间";
+            return false;
+        }
+        return true;
+    }
+    function login() {
+        var user=$("username");
+        var pwd=$("password");
+        if(user=="" &&pwd==""){
+            return false;
+        }else{
+            return true;
+        }
+    }
+</script>
+</html>

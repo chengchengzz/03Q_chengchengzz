@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车列表</title>
+</head>
+<body>
+<center>
+    <table border="1">
+        <tr>
+            <td>复选框</td>
+            <td>商品id</td>
+            <td>商品名称</td>
+            <td>商品描述</td>
+            <td>商品价格</td>
+            <td>商品图片</td>
+            <td>购买数量</td>
+            <td>商品总价</td>
+            <td>操作</td>
+        </tr>
+        <?php foreach($data as $key=>$val) { ?>
+        <tr>
+            <td><input type="checkbox" name="check" class="total" cart_id="<?=$val['cart_id']?>"></td>
+            <td><?=$val['cart_id']?></td>
+            <td><?=$val['cart_name']?></td>
+            <td><?=$val['cart_content']?></td>
+            <td><?=$val['cart_sprice']?></td>
+            <td><img src="__ROOT__/uploads/<?=$val['img']?>" alt="" width="90px" height="60px"></td>
+            <td>
+                <input type="number" name="count" min="1" value="<?=$val['cart_count']?>" class="text_box" goods_id="<?=$val['goods_id']?>" price="<?=$val['goods_sprice']?>">
+            </td>
+            <td><?=$val['cart_money']?></td>
+            <td>
+                <a href="cart_del/?id=<?=$val['cart_id']?>">删除</a>
+                <a href="order/?id=<?=$val['cart_id']?>&goods_id=<?=$val['goods_id']?>" class="sku">加入订单</a>
+            </td>
+        </tr>
+        <?php  } ?>
+    </table>
+</center>
+</body>
+</html>

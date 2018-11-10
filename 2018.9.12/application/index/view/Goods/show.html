@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>商品列表</title>
+</head>
+<style type="text/css">
+	.register{width:700px;min-height:300px;border:1px solid #ccc;background:#efefef;padding:30px;margin-top:3rem;margin-left:10rem;font-size:16px;font-weight:bold;}
+	.register-title{margin-left:20rem;}
+	.sub{margin-left:10rem;}
+	.login{float:right; margin-right:10px;}
+	table tr td{padding-left:15px;}
+</style>
+<body>
+<div class="register">
+<form action="add" method="post" enctype="multipart/form-data" method="post">
+<a href="login" class="login">登录</a><a href="add">添加商品</a>	<a href="login_out" class="login">退出</a>	<a href="cartshow">我的购物车</a>
+	<table class="add">
+		<p class="register-title">商品列表</p>
+		<tr>
+			<td>商品ID</td>
+			<td>商品名称</td>
+			<td>商品描述</td>
+			<td>商品价格</td>
+			<td>商品图片</td>
+			<td>商品库存</td>
+			<td>操作</td>
+		</tr>
+		<?php foreach ($data as $key => $val) {?>
+			<tr>
+				<td><?=$val['goods_id']?></td>
+				<td><?=$val['goods_name']?></td>
+				<td><?=$val['goods_content']?></td>
+				<td><?=$val['goods_sprice']?></td>
+				<td><img src="__ROOT__/uploads/<?=$val['img']?>" alt="" width="100px" height="100px"></td>
+				<td><?=$val['goods_sku']?></td>
+				<td>
+					<a href="cart/?id=<?=$val['goods_id']?>">加入购物车</a>
+				</td>
+			</tr>
+		<?php }?>
+	</table>
+</form>
+</div>
+</body>
+</html>
+
+
+
+

@@ -23,17 +23,17 @@ class curd{
 
 	}
 		public function content($id,$table){
-		header("content-type:text/html;charset=utf8");
-		$dsn="mysql:host=127.0.0.1;dbname=2018.11.5";
-		$db=new PDO($dsn,'root','root');
-		$res=$db->query("select * from $table where(id='$id')");
-		$data=$res->fetchAll();
-		$content=$data['content']-1;
-		$ser=$db->exec("update $table set content='$content' where(id='$id')");
-		if ($ser) {
-			return "";
-		}else{
-			return "";
+		   header("content-type:text/html;charset=utf8");
+			$dsn="mysql:host=127.0.0.1;dbname=2018.11.5";
+			$db=new PDO($dsn,'root','root');
+			$res=$db->query("select * from $table where(id='$id')");
+			$data=$res->fetchAll();
+			$content=$data['content']-1;
+			$ser=$db->exec("update $table set content='$content' where(id='$id')");
+			if ($ser){
+			return "<script>alert('添加成功');location.href='show.php'</script>";
+		    }else{
+			return "<script>alert('添加失败');location.href='show.php'</script>";
 		}
 
 	}
@@ -48,13 +48,13 @@ class curd{
 		}
 	}
 	public function update($table,$id){
-		$dsn="mysql:host=127.0.0.1;dbname=text";
+		$dsn="mysql:host=127.0.0.1;dbname=2018.11.5";
 		$db=new PDO($dsn,'root','root');
 		$data=$db->exec("update form $table where(id='$id')");
 		if ($data) {
-			return "修改成功";
+			return "<script>alert('添加成功');location.href='show.php'</script>";
 		}else{
-			return  "修改失败";
+			return "<script>alert('添加失败');location.href='show.php'</script>";
 		}
 	}
 }

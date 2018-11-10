@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+    <form action="{:url('Login/goods_do')}" method="post" enctype="multipart/form-data">
+        <table border="1">
+            <h1>商品表</h1>
+            <tr>
+                <td>商品名称</td>
+                <td><input type="text" name="goods_name"></td>
+            </tr>
+            <tr>
+                <td>商品价格</td>
+                <td><input type="text" name="goods_sprice"></td>
+            </tr>
+            <tr>
+                <td>商品简介</td>
+                <td><textarea name="goods_content" id="" cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td>商品时间</td>
+                <td><input type="text" name="goods_time"></td>
+            </tr>
+            <tr>
+                <td>商品排序</td>
+                <td><input type="text" name="goods_sort"></td>
+            </tr>
+            <tr>
+                <td>商品图片</td>
+                <td><input type="file" name="goods_img"></td>
+            </tr>
+            <tr>
+                <td>商品数量</td>
+                <td><input type="text" name="goods_number"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="提交"></td>
+                <td></td>
+            </tr>
+        </table>
+    </form>
+</center>
+</body>
+</html>
